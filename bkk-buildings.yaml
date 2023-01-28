@@ -24,7 +24,7 @@ layers:
     source: XYZ
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
 
-  - uid: v-layer
+  - uid: V-layer
     label: Drawing Pad
     visible: true
     source: GeoJSON

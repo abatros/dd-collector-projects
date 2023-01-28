@@ -1,0 +1,50 @@
+name: provinces
+comments: >
+  button P6
+zoom: 7
+xy: [718573.61, 1447971.39]
+xy_projection: EPSG:32647
+
+layers:
+  - uid: gmap-tiled
+    label: GoogleMap
+    visible: true
+    group: base-layers
+    source: TileImage
+    url: http://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
+
+  - uid: osm-tiled
+    label: OpenStreet
+    visible: true
+    group: base-layers
+    source: XYZ
+    url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
+
+  - uid: provinces-tiled
+    label: provinces-tiled
+    visible: true
+    url: http://thgeom-academy.com/geoserver/thgeom/wms
+    source: TileWMS
+    params:
+      format: image/png
+      VERSION: 1.1.1
+      tiled: true
+      STYLES: ''
+      LAYERS: thgeom:province
+      exceptions: application/vnd.ogc.se_inimage
+      tilesOrigin: 325216.6825965092,620826.9742561106
+
+
+  - uid: provinces-untiled
+    label: provinces-untiled
+    visible: false
+    url: http://thgeom-academy.com/geoserver/thgeom/wms
+    source: TileWMS
+    params:
+      format: image/png
+      VERSION: 1.1.1
+      tiled: false
+      STYLES: ''
+      LAYERS: thgeom:province
+      exceptions: application/vnd.ogc.se_inimage
+      tilesOrigin: 325216.6825965092,620826.9742561106

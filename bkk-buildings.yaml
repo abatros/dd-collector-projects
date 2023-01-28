@@ -24,8 +24,8 @@ layers:
     source: XYZ
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
 
-  - uid: V-layer
-    label: Drawing Pad
+  - uid: v-layer
+    label: V-layer
     visible: true
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs

@@ -76,3 +76,31 @@ layers:
         width: 1
       fill:
         color: rgba(0, 155, 155, 0)
+        
+  - uid: v-layer
+    label: V-layer
+    visible: true
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:geometries
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:3857
+      bbox: extent
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(200, 0, 200, 0.5)
+        width: 2
+      fill:
+        color: rgba(255, 255, 255, 0.4)
+      circle:
+        radius: 7
+        fill:
+          color: rgba(255,20,100,0.5)
+          
+          

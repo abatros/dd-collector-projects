@@ -1,0 +1,78 @@
+uid: bkk-buildings
+name: bkk-buildings
+pretty_name: BKK Buildings
+xy: [665813.75,1518844.63]
+xy_projection: EPSG:32647
+zoom: 17
+comment: |
+  button P4
+
+layers:
+  - uid: gmap-tiled
+    olayer_: gmap_tiled
+    label: GoogleMap
+    visible: true
+    group: base-layers
+    source: TileImage
+    url: http://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
+
+  - uid: osm-tiled
+    olayer_: osm_tiled
+    label: OpenStreet
+    visible: true
+    group: base-layers
+    source: XYZ
+    url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
+
+  - uid: v-layer
+    label: Drawing Pad
+    visible: false
+    source: GeoJSON
+    url: http://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:geometries
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:3857
+      bbox: extent
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(200, 0, 200, 0.5)
+        width: 2
+      fill:
+        color: rgba(255, 255, 255, 0.8)
+      circle:
+        radius: 10
+        stroke:
+          color: rgba(255, 0, 0, 0.5)
+          width: 2
+        fill:
+          color: rgba(255,255,0,0.5)
+
+
+  - uid: bkk-buildings
+    label: Buildings
+    visible: true
+    source: GeoJSON
+    url: http://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:bkk-buildings
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:3857
+      tiled: true
+      bbox: extent
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(255, 0, 100, 1.0)
+        width: 1
+      fill:
+        color: rgba(0, 155, 155, 0)

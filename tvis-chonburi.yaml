@@ -51,7 +51,7 @@ layers:
         color: rgba(200, 0, 200, 0.5)
         width: 2
       fill:
-        color: rgba(255, 255, 255, 0.4)
+        color: rgba(240, 240, 255, 0.4)
       circle:
         radius: 7
         fill:
@@ -109,7 +109,7 @@ layers:
 
   - uid: vis-buildings
     label: Buildings
-    visible: false
+    visible: true
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
     params:

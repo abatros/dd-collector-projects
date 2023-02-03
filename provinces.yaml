@@ -5,7 +5,7 @@ comments: >
 zoom: 7
 xy: [718573.61, 1447971.39]
 xy_projection: EPSG:32647
-info_layer: provinces_tiled
+info_layer: provinces-tiled
 
 layers:
   - uid: gmap-tiled

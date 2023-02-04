@@ -6,6 +6,22 @@ comment: |
 zoom: 12
 xy: [718573.61, 1447971.39]
 xy_projection: EPSG:32647
+
+forms:
+  - name: building-info
+  - fields:
+    - name: building-code
+      type: alpha-numeric
+      required: true
+    - name: np
+      label: number occupants
+      type: numeric
+    - name: zip-code
+      type: /[A-Za-z]{2}[0-9]{6}/
+    - name: street-name
+      type: a/n
+      required: false
+
 layers:
   - uid: gmap-tiled
     olayer_: gmap_tiled

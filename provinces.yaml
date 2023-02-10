@@ -22,7 +22,7 @@ layers:
     source: XYZ
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
     
-   - uid: GoogleSat
+  - uid: GoogleSat
     label: GoogleSat
     visible: false
     group: base-layers

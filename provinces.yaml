@@ -21,6 +21,13 @@ layers:
     group: base-layers
     source: XYZ
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
+    
+   - uid: GoogleSat
+    label: GoogleSat
+    visible: false
+    group: base-layers
+    source: TileImage
+    url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
 
   - uid: provinces-tiled
     label: provinces-tiled

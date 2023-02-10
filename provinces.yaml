@@ -32,7 +32,7 @@ layers:
   - uid: provinces-tiled
     label: provinces-tiled
     visible: true
-    url: https://thgeom-academy.com/geoserver/thgeom/wms
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     source: TileWMS
     params:
       format: image/png
@@ -48,7 +48,7 @@ layers:
   - uid: provinces-untiled
     label: provinces-untiled
     visible: false
-    url: https://thgeom-academy.com/geoserver/thgeom/wms
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     source: TileWMS
     params:
       format: image/png

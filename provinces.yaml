@@ -31,6 +31,7 @@ layers:
       format: image/png
       VERSION: 1.1.1
       tiled: true
+      request: GetFeature
       STYLES: ''
       LAYERS: thgeom:province
       exceptions: application/vnd.ogc.se_inimage

@@ -1,0 +1,5 @@
+name: bkk-building
+vbox
+  background-color: rgba(80,120,200,0.5)
+  hbox.b1
+    BKK-BUILDINGS</hbox>

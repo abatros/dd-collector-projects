@@ -1,5 +1,92 @@
 name: bkk-building
-vbox
+- vbox:
   background-color: rgba(80,120,200,0.5)
-  hbox.b1
-    BKK-BUILDINGS</hbox>
+  - hbox: b1
+    BKK-BUILDINGS
+
+  - hbox: wrap vbox1
+    - tag: vbox.field1
+      label: CODE
+      width: 10%
+      - tag: input.text
+        id: prov_code
+        name: prov_code
+        placeholder: 00
+
+    - tag: vbox.field1
+      label: PROVINCE (en)
+      width: 38%
+      - tag: input.text
+        id: prov_name
+        name: prov_name
+        placeholder: province (en)
+
+    - tag: vbox.field1
+      label: PROVINCE (th)
+      width: 38%
+      - tag: input.text
+        id: prov_namt
+        name: prov_namt
+        placeholder: province (th)
+
+    - tag: vbox.field1
+      label: CODE
+      width: 10%
+      - tag: input.text
+        id: amp_code
+        name: amp_code
+        placeholder: 00
+
+    - tag: vbox.field1
+      label: DISTRICT (en)
+      width: 38%
+      - tag: input.text
+        id: amp_name
+        name: amp_name
+        placeholder: district name (en)
+
+    - tag: vbox.field1
+      label: DISTRICT (th)
+      width: 38%
+      - tag: input.text
+        id: amp_namt
+        name: amp_namt
+        placeholder: district name (th)
+
+    - tag: vbox.field1
+      label: CODE
+      width: 15%
+      - tag: input.text
+        id: bl_code
+        name: bl_code
+        placeholder: 0000
+
+    - tag: vbox.field1
+      label: BUILDING (en)
+      width: 75%
+      - tag: input.text
+        id: bl_name
+        name: bl_name
+        placeholder: building name
+
+    - tag: vbox.field1
+      label: Street Address (en)
+      width: 100%
+      - tag: input.text
+        id: street
+        placeholder: street address
+
+    - tag: vbox.field1
+      label: GID
+      width: 20%
+      - tag: input.text
+        placeholder: GID (R/O)
+        id: gid
+
+    - tag: vbox.field1
+      label: FEATURE.ID
+      width: 70%
+      - tag: input.text
+        placeholder: feature.Id missing
+        id: fid
+        

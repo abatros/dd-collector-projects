@@ -1,10 +1,10 @@
 name: bkk-building
-- vbox:
+- tag: vbox
   background-color: rgba(80,120,200,0.5)
-  - hbox: b1
-    BKK-BUILDINGS
+  - tag: hbox.b1
+    text: BKK-BUILDINGS
 
-  - hbox: wrap vbox1
+  - tag: hbox.wrap.vbox1
     - tag: vbox.field1
       label: CODE
       width: 10%

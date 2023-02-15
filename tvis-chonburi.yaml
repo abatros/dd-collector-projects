@@ -96,7 +96,7 @@ layers:
 
   - uid: vis-lands
     label: Lands
-    visible: false
+    visible: true
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
     params:

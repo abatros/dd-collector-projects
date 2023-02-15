@@ -47,32 +47,6 @@ layers:
     source: TileImage
     url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
 
-  - uid: v-layer
-    label: V-layer
-    visible: true
-    source: GeoJSON
-    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
-    params:
-      service: WFS
-      version: 2.0.0
-      request: GetFeature
-      typename: thgeom:geometries
-      outputFormat: application/json
-      format_options: callback:loadFeatures
-      srsname: EPSG:3857
-      bbox: extent
-      exception: application/json
-    style:
-      stroke:
-        color: rgba(200, 0, 200, 0.5)
-        width: 2
-      fill:
-        color: rgba(240, 240, 255, 0.4)
-      circle:
-        radius: 7
-        fill:
-          color: rgba(255,20,100,0.5)
-
   - uid: vis-subdistricts
     label: Subdistricts
     visible: true
@@ -158,4 +132,31 @@ layers:
       STYLES: ''
       LAYERS: WMSDOL:MV_SPARCEL
       PROJECTION: EPSG:24047
+
+
+  - uid: v-layer
+    label: V-layer
+    visible: true
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:geometries
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:3857
+      bbox: extent
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(200, 0, 200, 0.5)
+        width: 2
+      fill:
+        color: rgba(240, 240, 255, 0.4)
+      circle:
+        radius: 7
+        fill:
+          color: rgba(255,20,100,0.5)
 

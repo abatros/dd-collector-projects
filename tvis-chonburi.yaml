@@ -3,7 +3,7 @@ name: chonburi
 pretty_name: VIS Chonburi
 comment: |
   button P5
-zoom: 12
+zoom: 14
 xy: [718573.61, 1447971.39]
 xy_projection: EPSG:32647
 

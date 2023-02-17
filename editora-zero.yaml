@@ -1,9 +1,11 @@
 name: editora-zero
 comments: >
   first essai to rebuild dd-collector as Editora
+  based on TVIS-chonburi
 author: dkz
 xy: [718573.61, 1447971.39]
 xy_projection: EPSG:32647
+zoom: 14
 
 layers:
   - uid: gmap-tiled

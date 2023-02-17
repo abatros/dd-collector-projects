@@ -2,3 +2,143 @@ name: editora-zero
 comments: >
   first essai to rebuild dd-collector as Editora
 author: dkz
+xy: [718573.61, 1447971.39]
+xy_projection: EPSG:32647
+
+layers:
+  - uid: gmap-tiled
+    olayer_: gmap_tiled
+    label: GoogleMap
+    visible: false
+    group: base-layers
+    source: TileImage
+    url: http://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
+
+  - uid: osm-tiled
+    olayer_: osm_tiled
+    label: OpenStreet
+    visible: true
+    group: base-layers
+    source: XYZ
+    url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
+
+
+  - uid: GoogleSat
+    label: GoogleSat
+    visible: false
+    group: base-layers
+    source: TileImage
+    url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
+
+  - uid: vis-subdistricts
+    label: Subdistricts
+    visible: true
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:vis-data-subdistrict
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:32647
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(0, 0, 255, 1.0)
+        width: 3
+      fill:
+        color: rgba(0, 155, 155, 0)
+
+  - uid: vis-lands
+    label: Lands
+    visible: true
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:vis-data-land
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:32647
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(255, 0, 255, 1.0)
+        width: 1
+      fill:
+        color: rgba(200, 255, 200, 0.15)
+      circle:
+        radius: 7
+        fill:
+          color: rgba(255,20,255,0.5)
+        stroke:
+          color: rgba(255, 255, 0, 1.0)
+          width: 1
+
+
+  - uid: vis-buildings
+    label: Buildings
+    visible: true
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:vis-data-bldg
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:32647
+      bbox: extent
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(50, 100, 200, 1.0)
+        width: 1
+      fill:
+        color: rgba(255, 0, 255, 0.1)
+
+  - uid: lands-untiled
+    label: lands-untiled
+    visible: false
+    source: ImageWMS
+    ratio: 1
+    url: http://110.164.49.68:8081/geoserver/WMSDOL/wms
+    params:
+      format: image/png
+      VERSION: 1.1.1
+      tiled: false
+      STYLES: ''
+      LAYERS: WMSDOL:MV_SPARCEL
+      PROJECTION: EPSG:24047
+
+
+  - uid: v-layer
+    label: V-layer
+    visible: true
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:geometries
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:3857
+      bbox: extent
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(200, 0, 200, 0.5)
+        width: 2
+      fill:
+        color: rgba(240, 240, 255, 0.4)
+      circle:
+        radius: 7
+        fill:
+          color: rgba(255,20,100,0.5)

@@ -5,7 +5,7 @@ comments: >
 author: dkz
 xy: [718573.61, 1447971.39]
 xy_projection: EPSG:32647
-zoom: 18
+zoom: 17
 
 layers:
   - uid: gmap-tiled

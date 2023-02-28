@@ -50,10 +50,11 @@ layers:
       exception: application/json
     style:
       stroke:
-        color: rgba(0, 0, 255, 1.0)
-        width: 3
+        color: rgba(255, 0, 100, 1.0)
+        width: 1
       fill:
         color: rgba(0, 155, 155, 0)
+  
 
   - uid: poi
     label: POI

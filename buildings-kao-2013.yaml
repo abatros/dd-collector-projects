@@ -36,7 +36,7 @@ layers:
   - uid: buildings
     label: Buildings
     visible: true
-    minZoom: 7
+    minZoom: 12
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
     params:
@@ -51,8 +51,8 @@ layers:
       exception: application/json
     style:
       stroke:
-        color: rgba(255, 0, 100, 1.0)
-        width: 1
+        color: rgba(0, 255, 100, 1.0)
+        width: 0.75
       fill:
         color: rgba(0, 155, 155, 0)
   

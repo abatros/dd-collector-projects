@@ -4,7 +4,8 @@ pretty_name: Landmarks & Buildings (2013)
 comment: |
   button P5
 zoom: 10
-xy: [718573.61, 1447971.39]
+xyIgnore: [718573.61, 1447971.39]
+lonlat: [100.6452, 13,7663]
 xy_projection: EPSG:32647
 
 

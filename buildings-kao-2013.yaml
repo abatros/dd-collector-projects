@@ -36,6 +36,7 @@ layers:
   - uid: buildings
     label: Buildings
     visible: true
+    minZoom: 7
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
     params:

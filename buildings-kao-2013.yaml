@@ -95,7 +95,7 @@ layers:
       service: WFS
       version: 2.0.0
       request: GetFeature
-      typename: thgeom:BLDG_new_region
+      typename: thgeom:geometries
       outputFormat: application/json
       format_options: callback:loadFeatures
       srsname: EPSG:3857

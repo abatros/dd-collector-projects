@@ -95,7 +95,7 @@ layers:
       service: WFS
       version: 2.0.0
       request: GetFeature
-      typename: thgeom:geometries
+      typename: thgeom:BLDG_new_region
       outputFormat: application/json
       format_options: callback:loadFeatures
       srsname: EPSG:3857
@@ -106,7 +106,7 @@ layers:
         color: rgba(200, 0, 200, 0.5)
         width: 2
       fill:
-        color: rgba(240, 240, 255, 0.4)
+        color: rgba(240, 240, 255, 0.6)
       circle:
         radius: 7
         fill:

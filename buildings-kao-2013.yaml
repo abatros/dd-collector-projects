@@ -46,7 +46,7 @@ layers:
       typename: thgeom:BLDG_new_region
       outputFormat: application/json
       format_options: callback:loadFeatures
-      srsname: EPSG:32647
+      srsname: EPSG:4326
       bbox: extent
       exception: application/json
     style:

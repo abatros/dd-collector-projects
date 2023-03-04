@@ -51,7 +51,7 @@ layers:
 
   - uid: buildings
     label: Buildings
-    visible: false
+    visible: true
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
     params:

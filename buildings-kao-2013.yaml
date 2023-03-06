@@ -62,6 +62,7 @@ layers:
       format_options: callback:loadFeatures
       srsname: EPSG:4326
       bbox: extent
+      maxFeatures: 1000
       exception: application/json
     style:
       stroke:

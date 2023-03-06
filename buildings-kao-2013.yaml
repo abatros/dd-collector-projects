@@ -3,7 +3,7 @@ name: buildings-kao
 pretty_name: Landmarks & Buildings (2013)
 comment: |
   button P5
-zoom: 12
+zoom: 10
 xyIgnore: [718573.61, 1447971.39]
 lonlat: [100.6452, 13,7263]
 xy_projection: EPSG:32647
@@ -21,7 +21,7 @@ layers:
   - uid: osm-tiled
     olayer_: osm_tiled
     label: OpenStreet
-    visible: false
+    visible: true
     group: base-layers
     source: XYZ
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
@@ -29,7 +29,7 @@ layers:
 
   - uid: GoogleSat
     label: GoogleSat
-    visible: true
+    visible: false
     group: base-layers
     source: TileImage
     url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}

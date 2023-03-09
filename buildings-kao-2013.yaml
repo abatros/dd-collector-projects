@@ -42,7 +42,7 @@ layers:
     params:
       format: image/png
       VERSION: 1.1.1
-      tiled: true
+      tiled: false
       request: GetFeature
       STYLES: ''
       LAYERS: thgeom:BLDG_new_region

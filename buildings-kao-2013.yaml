@@ -75,7 +75,7 @@ layers:
 
   - uid: poi
     label: POI
-    visible: true
+    visible: false
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
     params:

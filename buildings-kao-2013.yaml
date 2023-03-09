@@ -47,7 +47,6 @@ layers:
       STYLES: ''
       LAYERS: thgeom:BLDG_new_region
       exceptions: application/vnd.ogc.se_inimage
-      tilesOriginx: 100.48873901367188,13.670610427856445
 
   - uid: buildings
     label: Buildings

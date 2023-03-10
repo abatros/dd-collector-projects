@@ -36,7 +36,7 @@ layers:
 
   - uid: buildings-IMG
     label: buildings-IMG
-    visible: true
+    visible: false
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     source: TileWMS
     params:

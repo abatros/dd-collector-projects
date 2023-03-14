@@ -13,7 +13,7 @@ layers:
   - uid: gmap-tiled
     olayer_: gmap_tiled
     label: GoogleMap
-    visible: false
+    visible: true
     group: base-layers
     source: TileImage
     url: http://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
@@ -28,7 +28,7 @@ layers:
 
   - uid: GoogleSat
     label: GoogleSat
-    visible: true
+    visible: false
     group: base-layers
     source: TileImage
     url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}

@@ -13,15 +13,15 @@ layers:
   - uid: gmap-tiled
     olayer_: gmap_tiled
     label: GoogleMap
-    visible: true
+    visible: false
     group: base-layers
     source: TileImage
     url: http://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
 
   - uid: osm-tiled
-    #olayer_: osm_tiled
+    olayer_: osm_tiled
     label: OpenStreet
-    visible: false
+    visible: true
     group: base-layers
     source: XYZ
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png

@@ -1,4 +1,4 @@
-uid: buildings-kao
+Jjuid: buildings-kao
 name: buildings-kao
 pretty_name: Landmarks & Buildings (2013)
 comment: |
@@ -36,7 +36,7 @@ layers:
 
   - uid: buildings-IMG
     label: buildings-IMG
-    visible: false
+    visible: true
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     source: TileWMS
     params:

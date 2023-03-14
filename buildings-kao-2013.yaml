@@ -26,25 +26,9 @@ layers:
     source: XYZ
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
 
-  - uid: provinces-tiled
-    label: provinces-tiled
-    visible: true
-    group: base-layers
-    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
-    source: TileWMS
-    params:
-      format: image/png
-      VERSION: 1.1.1
-      tiled: true
-      #request: GetFeature
-      STYLES: ''
-      LAYERS: thgeom:province
-      exceptions: application/vnd.ogc.se_inimage
-
-
   - uid: GoogleSat
     label: GoogleSat
-    visible: false
+    visible: true
     group: base-layers
     source: TileImage
     url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
@@ -77,8 +61,7 @@ layers:
       STYLES: ''
       LAYERS: thgeom:BLDG_new_region
       exceptions: application/vnd.ogc.se_inimage
-
-      
+     
   - uid: buildings
     label: Buildings
     visible: true

@@ -3,7 +3,7 @@ name: buildings-kao
 pretty_name: Landmarks & Buildings (2013)
 comment: |
   button P5
-zoom: 10
+zfalse 10
 xyIgnore: [718573.61, 1447971.39]
 lonlat: [100.6452, 13,7263]
 xy_projection: EPSG:32647
@@ -21,10 +21,25 @@ layers:
   - uid: osm-tiled
     #olayer_: osm_tiled
     label: OpenStreet
-    visible: true
+    visible: false
     group: base-layers
     source: XYZ
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
+
+  - uid: provinces-tiled
+    label: provinces-tiled
+    visible: true
+    group: base-layers
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
+    source: TileWMS
+    params:
+      format: image/png
+      VERSION: 1.1.1
+      tiled: true
+      #request: GetFeature
+      STYLES: ''
+      LAYERS: thgeom:province
+      exceptions: application/vnd.ogc.se_inimage
 
 
   - uid: GoogleSat
@@ -34,7 +49,22 @@ layers:
     source: TileImage
     url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
 
-  - uid: buildings-IMG
+  - uid: provinces-tiled
+    label: provinces-tiled
+    visible: true
+    group: base-layers
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
+    source: TileWMS
+    params:
+      format: image/png
+      VERSION: 1.1.1
+      tiled: true
+      #request: GetFeature
+      STYLES: ''
+      LAYERS: thgeom:province
+      exceptions: application/vnd.ogc.se_inimage
+
+- uid: buildings-IMG
     label: buildings-IMG
     visible: true
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
@@ -48,19 +78,6 @@ layers:
       LAYERS: thgeom:BLDG_new_region
       exceptions: application/vnd.ogc.se_inimage
 
-  - uid: provinces-tiled
-    label: provinces-tiled
-    visible: true
-    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
-    source: TileWMS
-    params:
-      format: image/png
-      VERSION: 1.1.1
-      tiled: true
-      #request: GetFeature
-      STYLES: ''
-      LAYERS: thgeom:province
-      exceptions: application/vnd.ogc.se_inimage
       
   - uid: buildings
     label: Buildings

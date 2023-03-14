@@ -36,7 +36,7 @@ layers:
   - uid: provinces-tiled
     label: provinces-tiled
     visible: true
-    group: base-layers
+    #group: base-layers
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     source: TileWMS
     params:
@@ -47,7 +47,7 @@ layers:
       STYLES: ''
       LAYERS: thgeom:province
       exceptions: application/vnd.ogc.se_inimage
-
+      
 - uid: buildings-IMG
     label: buildings-IMG
     visible: true

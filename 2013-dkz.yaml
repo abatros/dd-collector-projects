@@ -1,1 +1,130 @@
+uid: buildings-kao
+name: buildings-kao
+pretty_name: Landmarks & Buildings (2013)
+comment: |
+  copy from buildings-kao-2013
+zoom: 10
+xyIgnore: [718573.61, 1447971.39]
+lonlat: [100.6452, 13,7263]
+xy_projection: EPSG:32647
+
+
+layers:
+  - uid: gmap-tiled
+    olayer_: gmap_tiled
+    label: GoogleMap
+    visible: false
+    group: base-layers
+    source: TileImage
+    url: http://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
+
+  - uid: osm-tiled
+    olayer_: osm_tiled
+    label: OpenStreet
+    visible: true
+    group: base-layers
+    source: XYZ
+    url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
+
+
+  - uid: GoogleSat
+    label: GoogleSat
+    visible: false
+    group: base-layers
+    source: TileImage
+    url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
+
+  - uid: buildings-IMG
+    label: buildings-IMG
+    visible: false
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
+    source: TileWMS
+    params:
+      format: image/png
+      VERSION: 1.1.1
+      tiled: true
+      request: GetFeature
+      STYLES: ''
+      LAYERS: thgeom:BLDG_new_region
+      exceptions: application/vnd.ogc.se_inimage
+
+  - uid: buildings
+    label: Buildings
+    visible: true
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:BLDG_new_region
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:4326
+      bbox: extent
+      maxFeatures: 1000
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(0, 150, 255, 1.0)
+        width: 0.75
+      fill:
+        color: rgba(0, 155, 155, 0)
+  
+
+  - uid: poi
+    label: POI
+    visible: false
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:LANDMARK_point
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:32647
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(255, 0, 255, 1.0)
+        width: 1
+      fill:
+        color: rgba(200, 255, 200, 0.15)
+      circle:
+        radius: 5
+        fill:
+          color: rgba(255,20,255,0.5)
+        stroke:
+          color: rgba(255, 255, 0, 1.0)
+          width: 1
+
+
+  - uid: v-layer
+    label: V-layer
+    visible: true
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:geometries
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:3857
+      bbox: extent
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(200, 0, 200, 0.5)
+        width: 2
+      fill:
+        color: rgba(240, 240, 255, 0.6)
+      circle:
+        radius: 7
+        fill:
+          color: rgba(255,20,100,0.5)
+
 

@@ -19,7 +19,7 @@ layers:
     url: http://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
 
   - uid: osm-tiled
-    olayer_: osm_tiled
+    #olayer_: osm_tiled
     label: OpenStreet
     visible: true
     group: base-layers

@@ -48,7 +48,7 @@ layers:
       LAYERS: thgeom:province
       exceptions: application/vnd.ogc.se_inimage
       
-- uid: buildings-IMG
+  - uid: buildings-IMG
     label: buildings-IMG
     visible: true
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms

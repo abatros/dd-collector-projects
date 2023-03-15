@@ -37,6 +37,7 @@ layers:
   - uid: provinces-tiled
     label: provinces-tiled
     visible: true
+    minZoom: 6
     #group: base-layers
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     source: TileWMS

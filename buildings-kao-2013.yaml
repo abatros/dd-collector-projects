@@ -53,6 +53,7 @@ layers:
   - uid: buildings-IMG
     label: buildings-IMG
     visible: true
+    minzoom: 15
     extent: 100.48873901367188, 13.670610427856445, 100.68555450439453, 13.894135475158691
     capstyle:
       fontsize: 0.5em

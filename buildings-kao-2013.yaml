@@ -52,6 +52,9 @@ layers:
   - uid: buildings-IMG
     label: buildings-IMG
     visible: true
+    capstyle:
+      fontsize: 0.5em
+      content: Bi
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     source: TileWMS
     params:
@@ -65,6 +68,9 @@ layers:
      
   - uid: buildings
     label: Buildings
+    capstyle:
+      fontsize: 0.9em
+      content: B
     visible: true
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs

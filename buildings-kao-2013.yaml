@@ -4,17 +4,17 @@ pretty_name: Landmarks & Buildings (2013)
 comment: |
   button P5
 zoom: 8
-#xyIgnore: [718573.61, 1447971.39]
-xyIgnore: [718573.61, 1517971.39]
+xyIgnore: [718573.61, 1447971.39]
+#xyIgnore: [718573.61, 1517971.39]
 lonlat: [100.6452, 13,7263]
-xy_projection: EPSG:32647
+xy_projection: EPSG:3857
 
 
 layers:
   - uid: gmap-tiled
     olayer_: gmap_tiled
     label: GoogleMap
-    visible: true
+    visible: false
     group: base-layers
     source: TileImage
     url: http://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
@@ -22,7 +22,7 @@ layers:
   - uid: osm-tiled
     olayer_: osm_tiled
     label: OpenStreet
-    visible: false
+    visible: true
     group: base-layers
     source: XYZ
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png

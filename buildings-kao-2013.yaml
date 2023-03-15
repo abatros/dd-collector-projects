@@ -21,14 +21,14 @@ layers:
   - uid: osm-tiled
     olayer_: osm_tiled
     label: OpenStreet
-    visible: true
+    visible: false
     group: base-layers
     source: XYZ
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
 
   - uid: GoogleSat
     label: GoogleSat
-    visible: false
+    visible: true
     group: base-layers
     source: TileImage
     url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
@@ -36,7 +36,7 @@ layers:
   - uid: provinces-tiled
     label: provinces-tiled
     visible: true
-    #group: base-layers
+    group: base-layers
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     source: TileWMS
     params:

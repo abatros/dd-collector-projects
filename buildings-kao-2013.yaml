@@ -61,7 +61,7 @@ layers:
       #request: GetFeature
       STYLES: ''
       LAYERS: thgeom:BLDG_new_region
-      exceptions: application/vnd.ogc.se_inimage
+      #exceptions: application/vnd.ogc.se_inimage
      
   - uid: buildings
     label: Buildings

@@ -53,7 +53,7 @@ layers:
   - uid: buildings-IMG
     label: buildings-IMG
     visible: true
-    minzoom: 16
+    minZoom: 16
     #extent: 100.48873901367188, 13.670610427856445, 100.68555450439453, 13.894135475158691
     capstyle:
       fontsize: 0.5em
@@ -75,7 +75,7 @@ layers:
       fontsize: 0.9em
       content: B
     visible: false
-    minzoom: 17
+    minZoom: 17
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
     params:
@@ -101,7 +101,7 @@ layers:
   - uid: poi
     label: POI
     visible: false
-    minzoom: 10
+    minZoom: 10
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
     params:

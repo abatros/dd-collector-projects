@@ -75,6 +75,7 @@ layers:
       fontsize: 0.9em
       content: B
     visible: true
+    minzoom: 17
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
     params:
@@ -100,6 +101,7 @@ layers:
   - uid: poi
     label: POI
     visible: false
+    minzoom: 10
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
     params:

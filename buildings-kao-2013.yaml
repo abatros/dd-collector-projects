@@ -75,7 +75,7 @@ layers:
       fontsize: 0.9em
       content: B
     visible: false
-    minZoom: 17
+    minZoom: 16
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
     params:

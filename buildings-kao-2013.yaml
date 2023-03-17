@@ -74,7 +74,7 @@ layers:
     capstyle:
       fontsize: 0.9em
       content: B
-    visible: true
+    visible: false
     minzoom: 17
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
@@ -88,7 +88,7 @@ layers:
       #srsname: EPSG:4326
       bbox: extent
       #maxFeatures: 1000
-      count: 1000
+      #count: 1000
       exception: application/json
     style:
       stroke:

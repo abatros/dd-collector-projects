@@ -65,7 +65,7 @@ layers:
       STYLES: ''
       LAYERS: thgeom:amphoe
       exceptions: application/vnd.ogc.se_inimage
-
+      
   - uid: buildings-IMG
     label: buildings-IMG
     visible: true

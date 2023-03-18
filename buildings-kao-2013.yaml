@@ -50,6 +50,22 @@ layers:
       LAYERS: thgeom:province
       exceptions: application/vnd.ogc.se_inimage
 
+- uid: amphoes-tiled
+    label: amphoes-tiled
+    visible: false
+    minZoom: 10
+    #group: base-layers
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
+    source: TileWMS
+    params:
+      format: image/png
+      VERSION: 1.3.0
+      tiled: true
+      #request: GetFeature
+      STYLES: ''
+      LAYERS: thgeom:amphoe
+      exceptions: application/vnd.ogc.se_inimage
+
   - uid: buildings-IMG
     label: buildings-IMG
     visible: true

@@ -50,7 +50,7 @@ layers:
       LAYERS: thgeom:province
       exceptions: application/vnd.ogc.se_inimage
 
-- uid: amphoes-tiled
+  - uid: amphoes-tiled
     label: amphoes-tiled
     visible: false
     minZoom: 10

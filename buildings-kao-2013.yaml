@@ -32,7 +32,8 @@ layers:
     visible: false
     group: base-layers
     source: TileImage
-    url: https://mt1.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
+    url: https://mt1.google.com/vt/lyrs=s@189&hl=en&&x={x}&y={y}&z={z}
+    #url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
 
   - uid: provinces-tiled
     label: provinces-tiled

@@ -17,7 +17,7 @@ layers:
     visible: false
     group: base-layers
     source: TileImage
-    url: http://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
+    url: https://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
 
   - uid: osm-tiled
     olayer_: osm_tiled

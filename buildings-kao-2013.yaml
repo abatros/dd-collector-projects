@@ -23,6 +23,7 @@ layers:
     olayer_: osm_tiled
     label: OpenStreet
     visible: true
+    gutter: 2
     group: base-layers
     source: XYZ
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png

@@ -25,7 +25,7 @@ layers:
     visible: true
     group: base-layers
     source: XYZ
-    ratio: 2
+    gutter: 2
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
 
   - uid: GoogleSat
@@ -73,7 +73,7 @@ layers:
     label: buildings-IMG
     visible: true
     minZoom: 15
-    ratio: 2
+    gutter: 2
     extent: 100.48873901367188, 13.670610427856445, 100.68555450439453, 13.894135475158691
     capstyle:
       fontsize: 0.5em
@@ -87,6 +87,8 @@ layers:
       #request: GetFeature
       srsname: EPSG:4326
       STYLES: ''
+      WIDTH: 512
+      HEIGHT: 512
       LAYERS: thgeom:BLDG_new_region
       exceptions: application/vnd.ogc.se_inimage
      

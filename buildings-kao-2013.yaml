@@ -25,7 +25,7 @@ layers:
     visible: true
     group: base-layers
     source: XYZ
-    gutter: 4
+    ratio: 2
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
 
   - uid: GoogleSat
@@ -73,7 +73,7 @@ layers:
     label: buildings-IMG
     visible: true
     minZoom: 15
-    gutter: 2
+    ratio: 2
     extent: 100.48873901367188, 13.670610427856445, 100.68555450439453, 13.894135475158691
     capstyle:
       fontsize: 0.5em

@@ -87,8 +87,8 @@ layers:
       #request: GetFeature
       srsname: EPSG:4326
       STYLES: ''
-      WIDTH: 512
-      HEIGHT: 512
+      WIDTH: 128
+      HEIGHT: 128
       LAYERS: thgeom:BLDG_new_region
       exceptions: application/vnd.ogc.se_inimage
      

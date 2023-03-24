@@ -23,9 +23,9 @@ layers:
     olayer_: osm_tiled
     label: OpenStreet
     visible: true
-    gutter: 4
     group: base-layers
     source: XYZ
+    gutter: 4
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
 
   - uid: GoogleSat

@@ -79,9 +79,11 @@ layers:
     capstyle:
       fontsize: 0.5em
       content: Bi
-    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
+    #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     source: TileWMS
     params:
+      service: WMS
       format: image/png
       VERSION: 1.3.0
       tiled: true

@@ -101,7 +101,7 @@ layers:
     visible: false
     minZoom: 17
     source: GeoJSON
-    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     params:
       service: WFS
       version: 2.0.0
@@ -112,7 +112,7 @@ layers:
       #srsname: EPSG:4326
       bbox: extent
       #maxFeatures: 1000
-      #count: 1000
+      count: 1000
       exception: application/json
     style:
       stroke:

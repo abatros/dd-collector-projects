@@ -55,7 +55,7 @@ layers:
 
   - uid: amphoes-tiled
     label: amphoes-tiled
-    visible: false
+    visible: true
     minZoom: 10
     #group: base-layers
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
@@ -100,7 +100,7 @@ layers:
     capstyle:
       fontsize: 0.9em
       content: B
-    visible: false
+    visible: true
     minZoom: 17
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows

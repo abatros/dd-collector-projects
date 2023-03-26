@@ -101,7 +101,7 @@ layers:
       fontsize: 0.9em
       content: B
     visible: false
-    minZoom: 15
+    minZoom: 16
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     params:
@@ -121,7 +121,7 @@ layers:
         color: rgba(0, 150, 255, 1.0)
         width: 0.75
       fill:
-        color: rgba(0, 155, 155, 0.25)
+        color: rgba(0, 155, 155, 0.35)
   
 
   - uid: poi

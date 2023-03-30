@@ -120,9 +120,9 @@ layers:
     style:
       stroke:
         color: rgba(0, 150, 255, 1.0)
-        width: 0.75
+        width: 0.45
       fill:
-        color: rgba(0, 155, 155, 0.35)
+        color: rgba(0, 155, 155, 0.25)
   
 
   - uid: poi

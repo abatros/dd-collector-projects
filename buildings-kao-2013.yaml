@@ -187,7 +187,7 @@ layers:
       fontsize: 0.9em
       content: L
     visible: true
-    minZoom: 16
+    minZoom: 14
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     params:

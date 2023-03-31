@@ -181,3 +181,34 @@ layers:
         fill:
           color: rgba(255,20,100,0.5)
 
+  - uid: vis-lands
+    label: Lands
+    capstyle:
+      fontsize: 0.9em
+      content: L
+    visible: true
+    minZoom: 16
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:vis-data-land
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:32647
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(255, 128, 0, 1.0)
+        width: 1
+      fill:
+        color: rgba(200, 255, 200, 0.15)
+      circle:
+        radius: 7
+        fill:
+          color: rgba(255,20,255,0.5)
+        stroke:
+          color: rgba(255, 255, 0, 1.0)
+          width: 1

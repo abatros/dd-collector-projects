@@ -202,7 +202,7 @@ layers:
     style:
       stroke:
         color: rgba(255, 64, 0, 1.0)
-        width: 0.5
+        width: 0.85
       fill:
         color: rgba(200, 255, 200, 0.15)
       circle:

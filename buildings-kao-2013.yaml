@@ -214,7 +214,7 @@ layers:
           width: 1
 
   - uid: vis-buildings
-    label: Buildings
+    label: vis-Buildings
     visible: true
     minZoom: 16
     source: GeoJSON

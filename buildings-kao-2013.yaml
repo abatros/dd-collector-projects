@@ -212,3 +212,27 @@ layers:
         stroke:
           color: rgba(255, 255, 0, 1.0)
           width: 1
+
+  - uid: vis-buildings
+    label: Buildings
+    visible: true
+    minZoom: 12
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:vis-data-bldg
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:32647
+      bbox: extent
+      exception: application/json
+    style:
+      stroke:
+        color: rgba(50, 100, 100, 1.0)
+        width: 0.5
+      fill:
+        color: rgba(255, 0, 255, 0.1)
+        

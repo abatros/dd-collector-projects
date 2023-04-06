@@ -216,7 +216,7 @@ layers:
   - uid: vis-buildings
     label: Buildings
     visible: true
-    minZoom: 12
+    minZoom: 16
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     params:

@@ -133,6 +133,9 @@ layers:
 
   - uid: poi
     label: POI
+    capstyle:
+      fontsize: 0.5em
+      content: PoI
     visible: false
     minZoom: 10
     source: GeoJSON

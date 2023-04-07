@@ -183,9 +183,9 @@ layers:
 
   - uid: vis-lands
     label: Lands
-    capstyle:
-      fontsize: 0.9em
-      content: L
+    css:
+      class: h2
+      content: VL
     visible: true
     minZoom: 12
     source: GeoJSON
@@ -215,6 +215,9 @@ layers:
 
   - uid: vis-buildings
     label: vis-Buildings
+    css:
+      class: h2
+      content: VB
     visible: true
     minZoom: 16
     source: GeoJSON

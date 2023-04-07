@@ -134,7 +134,7 @@ layers:
   - uid: poi
     label: POI
     capstyle:
-      fontsize: 0.5em
+      fontsize: 0.9em
       content: PoI
     visible: false
     minZoom: 10

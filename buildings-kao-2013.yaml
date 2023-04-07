@@ -184,7 +184,7 @@ layers:
   - uid: vis-lands
     label: Lands
     css:
-      class: h2
+      class: h3b
       content: VL
     visible: true
     minZoom: 12
@@ -216,7 +216,7 @@ layers:
   - uid: vis-buildings
     label: vis-Buildings
     css:
-      class: h2
+      class: h3b
       content: VB
     visible: true
     minZoom: 16

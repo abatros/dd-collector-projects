@@ -37,7 +37,7 @@ layers:
   - uid: GoogleSat
     button:
       label: Sat
-      class: h3
+      class: h2b
     label: GoogleSat
     visible: false
     group: base-layers

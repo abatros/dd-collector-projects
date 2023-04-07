@@ -38,6 +38,9 @@ layers:
 
   - uid: provinces-tiled
     label: provinces-tiled
+    css:
+      class: h3b
+      content: PrV
     visible: true
     minZoom: 6
     maxZoom: 10
@@ -55,6 +58,9 @@ layers:
 
   - uid: amphoes-tiled
     label: amphoes-tiled
+    css:
+      class: h3b
+      content: AP
     visible: true
     minZoom: 10
     #group: base-layers

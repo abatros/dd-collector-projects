@@ -192,7 +192,7 @@ layers:
     css:
       class: h3b
       content: VL
-      font-size: 28px
+      font-size: 32px
     visible: true
     minZoom: 12
     source: GeoJSON

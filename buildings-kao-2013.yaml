@@ -190,8 +190,9 @@ layers:
   - uid: vis-lands
     label: Lands
     css:
-      class: h2b
+      class: h3b
       content: VL
+      font-size: 28px
     visible: true
     minZoom: 12
     source: GeoJSON

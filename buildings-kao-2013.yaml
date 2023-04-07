@@ -205,7 +205,7 @@ layers:
   - uid: vis-lands
     label: Lands
     button:
-      class: h3b
+      class: h2
       label: VL
     visible: true
     minZoom: 12
@@ -237,7 +237,7 @@ layers:
   - uid: vis-buildings
     label: vis-Buildings
     button:
-      class: h2
+      class: h3b
       label: VB
     visible: true
     minZoom: 16

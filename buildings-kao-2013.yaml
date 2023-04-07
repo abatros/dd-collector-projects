@@ -210,6 +210,7 @@ layers:
       label: LP
     visible: true
     minZoom: 12
+    extent: 100.95, 13.05, 101.15, 13.25
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     params:

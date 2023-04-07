@@ -12,6 +12,9 @@ xy_projection: EPSG:3857
 
 layers:
   - uid: gmap-tiled
+    button:
+      label: G
+      class: h1
     olayer_: gmap_tiled
     label: GoogleMap
     visible: false
@@ -20,6 +23,9 @@ layers:
     url: https://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
 
   - uid: osm-tiled
+    button:
+      label: O
+      class: h1
     olayer_: osm_tiled
     label: OpenStreet
     visible: true
@@ -29,6 +35,9 @@ layers:
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
 
   - uid: GoogleSat
+    button:
+      label: Sat
+      class: h3
     label: GoogleSat
     visible: false
     group: base-layers
@@ -38,6 +47,9 @@ layers:
 
   - uid: provinces-tiled
     label: provinces-tiled
+    button:
+      class: h3b
+      label: PrV
     visible: true
     minZoom: 6
     maxZoom: 10
@@ -55,6 +67,9 @@ layers:
 
   - uid: amphoes-tiled
     label: amphoes-tiled
+    button:
+      class: h3b
+      label: AP
     visible: true
     minZoom: 10
     #group: base-layers
@@ -70,6 +85,9 @@ layers:
       exceptions: application/vnd.ogc.se_inimage
       
   - uid: buildings-IMG
+    button:
+      class: h2
+      label: Bi
     label: buildings-IMG
     visible: true
     minZoom: 15
@@ -77,9 +95,6 @@ layers:
     transition: 0
     extent: 100.488739, 13.670610, 100.685554, 13.894135
     #extent: 100.48873901367188, 13.670610427856445, 100.68555450439453, 13.894135475158691
-    capstyle:
-      fontsize: 0.5em
-      content: Bi
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     source: TileWMS
@@ -98,9 +113,9 @@ layers:
      
   - uid: buildings
     label: Buildings
-    capstyle:
-      fontsize: 0.9em
-      content: B
+    button:
+      class: h3b
+      label: Bv
     visible: true
     minZoom: 17
     source: GeoJSON
@@ -127,6 +142,9 @@ layers:
 
   - uid: poi
     label: POI
+    button:
+      class: h3b
+      label: PoI
     visible: false
     minZoom: 10
     source: GeoJSON
@@ -156,6 +174,9 @@ layers:
 
 
   - uid: v-layer
+    button:
+      class: h1
+      label: V
     label: V-layer
     visible: true
     source: GeoJSON

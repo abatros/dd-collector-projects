@@ -245,6 +245,7 @@ layers:
       label: viB
     visible: true
     minZoom: 16
+    extent: 100.95, 13.05, 101.15, 13.25
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     params:

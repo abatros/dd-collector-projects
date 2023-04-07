@@ -206,7 +206,7 @@ layers:
     label: Lands
     button:
       class: h2
-      label: VL
+      label: LP
     visible: true
     minZoom: 12
     source: GeoJSON
@@ -238,7 +238,7 @@ layers:
     label: vis-Buildings
     button:
       class: h3b
-      label: VB
+      label: viB
     visible: true
     minZoom: 16
     source: GeoJSON

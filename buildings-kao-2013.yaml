@@ -105,8 +105,8 @@ layers:
   - uid: buildings
     label: Buildings
     capstyle:
-      fontsize: 0.9em
-      content: B
+      fontsize: 0.7em
+      content: Bv
     visible: true
     minZoom: 17
     source: GeoJSON

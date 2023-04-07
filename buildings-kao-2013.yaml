@@ -237,7 +237,7 @@ layers:
   - uid: vis-buildings
     label: vis-Buildings
     button:
-      class: h3b
+      class: h2
       label: VB
     visible: true
     minZoom: 16

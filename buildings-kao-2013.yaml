@@ -190,7 +190,7 @@ layers:
   - uid: vis-lands
     label: Lands
     css:
-      class: h3b
+      class: h2b
       content: VL
     visible: true
     minZoom: 12

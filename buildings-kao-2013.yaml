@@ -51,7 +51,7 @@ layers:
       class: h3b
       label: PrV
     visible: true
-    minZoom: 6
+    minZoom: 5
     maxZoom: 10
     #group: base-layers
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms

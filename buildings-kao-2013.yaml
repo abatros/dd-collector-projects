@@ -272,7 +272,8 @@ layers:
     olayer_: dl
     label: D_Lands
     visible: true  
-    url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows
+    #url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows
+    url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows
     source: TileWMS
     params:
       format: image/png

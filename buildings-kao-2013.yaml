@@ -277,6 +277,6 @@ layers:
     source: XYZ
     #ratio: 1
     #url: https://npvc.treasury.go.th/NPVC/proxy/proxy.ashx?https://npvc.treasury.go.th/arcgis/rest/services//PRO/PRO_TDAS_PARCEL_PRICE/mapserver
-    url: https://npvc.treasury.go.th/NPVC/proxy/proxy.ashx?https://npvc.treasury.go.th/arcgis/rest/services//PRO/PRO_TDAS_PARCEL_PRICE/mapserver/tile//{z}/{x}/{y}.png
+    url: https://npvc.treasury.go.th/NPVC/proxy/proxy.ashx?https://npvc.treasury.go.th/arcgis/rest/services//PRO/PRO_TDAS_PARCEL_PRICE/mapserver/tile/{z}/{x}/{y}.png
     #params: {}
     

@@ -265,3 +265,15 @@ layers:
       fill:
         color: rgba(55, 155, 200, 0.2)
         
+  - uid: tdlands
+    button:
+      label: TDL
+      class: h3b
+    olayer_: tdl
+    label: TD_Lands
+    visible: true
+    source: ImageArcGISRest
+    ratio: 1
+    url: https://npvc.treasury.go.th/NPVC/proxy/proxy.ashx?https://npvc.treasury.go.th/arcgis/rest/services//PRO/PRO_TDAS_PARCEL_PRICE/mapserver
+    params: {}
+    

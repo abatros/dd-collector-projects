@@ -117,7 +117,7 @@ layers:
       class: h3b
       label: Bv
     visible: true
-    minZoom: 17
+    minZoom: 18
     extent: 100.488739, 13.670610, 100.685554, 13.894135
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows

@@ -187,7 +187,7 @@ layers:
       service: WFS
       version: 2.0.0
       request: GetFeature
-      typename: thgeom:sql-view-kao-2013-v-layer
+      typename: thgeom:oacs-geo-view-dd-maps
       outputFormat: application/json
       format_options: callback:loadFeatures
       srsname: EPSG:3857

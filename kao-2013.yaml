@@ -185,7 +185,7 @@ layers:
       service: WFS
       version: 2.0.0
       request: GetFeature
-      typename: thgeom:geometries
+      typename: thgeom:oacs-geo-view-teak-research
       outputFormat: application/json
       format_options: callback:loadFeatures
       srsname: EPSG:3857

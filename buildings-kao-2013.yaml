@@ -271,7 +271,8 @@ layers:
       class: h2
     olayer_: dl
     label: D_Lands
-    visible: true  
+    visible: true
+    minZoom: 15  
 #    #url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows
     url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows
     source: TileWMS

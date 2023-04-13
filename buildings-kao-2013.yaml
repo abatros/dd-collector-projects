@@ -207,9 +207,9 @@ layers:
   - uid: vis-lands
     label: Lands
     button:
-      class: h2
+      class: h38
       label: LP
-    visible: true
+    visible: false
     minZoom: 12
     extent: 100.95, 13.05, 101.15, 13.25
     source: GeoJSON
@@ -243,7 +243,7 @@ layers:
     button:
       class: h3b
       label: viB
-    visible: true
+    visible: false
     minZoom: 16
     extent: 100.95, 13.05, 101.15, 13.25
     source: GeoJSON

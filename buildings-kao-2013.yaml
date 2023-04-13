@@ -207,7 +207,7 @@ layers:
   - uid: vis-lands
     label: Lands
     button:
-      class: h38
+      class: h3b
       label: LP
     visible: false
     minZoom: 12

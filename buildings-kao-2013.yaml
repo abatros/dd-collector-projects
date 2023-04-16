@@ -306,7 +306,7 @@ layers:
       VERSION: 1.3.0
       #viewparams: [utmmap:51363, utmmap:51364]
       #viewparams: utmmap:51363\\;51364
-      viewparams: utmmap: [^0..9]
+      viewparams: utmmap:[^0..9]
       #viewparams: utmmap:51363
       #viewparams: utmmap:51364
       tiled: true

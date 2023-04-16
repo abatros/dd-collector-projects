@@ -289,7 +289,6 @@ layers:
       LAYERS: V_PARCEL47
       exceptions: application/vnd.ogc.se_inimage
 
-
 - uid: dlands-5136-III
     button:
       label: DL3

@@ -309,7 +309,7 @@ layers:
     label: index50k-tiled
     button:
       class: h3b
-      label: idM
+      label: iM
     visible: false
     minZoom: 5
     #group: base-layers

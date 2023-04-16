@@ -304,7 +304,7 @@ layers:
     #url: https://npvc.treasury.go.th/NPVC/proxy/proxy.ashx?https://npvc.treasury.go.th/arcgis/rest/services/PRO/PRO_TDAS_PARCEL_PRICE/mapserver/tile/{z}/{x}/{y}.png
     #url: https://npvc.treasury.go.th/arcgis/rest/services/PRO/PRO_TDAS_PARCEL_PRICE/mapserver/tile/{z}/{x}/{y}.png
     #params: {}
-    
+
   - uid: index50k
     label: index50k-tiled
     button:
@@ -324,4 +324,3 @@ layers:
       STYLES: ''
       LAYERS: geonode:index50k_ind1975z47n
       exceptions: application/vnd.ogc.se_inimage
-      

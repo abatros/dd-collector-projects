@@ -269,7 +269,7 @@ layers:
     button:
       label: DL4
       class: h3
-    olayer_: dl
+    olayer_: dl4
     label: D_Lands-4
     visible: true
     minZoom: 15  
@@ -293,7 +293,7 @@ layers:
     button:
       label: DL3
       class: h3
-    olayer_: dl
+    olayer_: dl3
     label: D_Lands-3
     visible: true
     minZoom: 15  
@@ -332,7 +332,7 @@ layers:
   - uid: index50k
     label: index50k-tiled
     button:
-      class: h3b
+      class: h3
       label: iM
     visible: false
     minZoom: 5

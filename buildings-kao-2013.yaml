@@ -265,12 +265,36 @@ layers:
       fill:
         color: rgba(55, 155, 200, 0.2)
 
-  - uid: dlands
+  - uid: dlands-5136-IV
     button:
-      label: DL
-      class: h2
+      label: DL4
+      class: h3
     olayer_: dl
-    label: D_Lands
+    label: D_Lands-4
+    visible: true
+    minZoom: 15  
+#    #url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows
+    url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows
+    source: TileWMS
+    crossOrigin: anonymous
+    params:
+      format: image/png
+      VERSION: 1.3.0
+      viewparams: utmmap:51364
+      #viewparams: utmmap:51364
+      tiled: true
+      #request: GetFeature
+      srsname: EPSG:24047
+      STYLES: ''
+      LAYERS: V_PARCEL47
+      exceptions: application/vnd.ogc.se_inimage
+
+- uid: dlands-5136-III
+    button:
+      label: DL3
+      class: h3
+    olayer_: dl
+    label: D_Lands-3
     visible: true
     minZoom: 15  
 #    #url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows

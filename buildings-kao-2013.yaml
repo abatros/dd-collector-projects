@@ -332,7 +332,7 @@ layers:
   - uid: index50k
     label: index50k-tiled
     button:
-      class: h3
+      class: h3b
       label: iM
     visible: false
     minZoom: 5

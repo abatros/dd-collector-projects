@@ -268,7 +268,7 @@ layers:
   - uid: dlands-5136-IV
     button:
       label: DL4
-      class: h3
+      class: h3b
     olayer_: dl4
     label: D_Lands-4
     visible: true
@@ -292,7 +292,7 @@ layers:
   - uid: dlands-5136-III
     button:
       label: DL3
-      class: h3
+      class: h3b
     olayer_: dl3
     label: D_Lands-3
     visible: true

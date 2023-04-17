@@ -267,10 +267,10 @@ layers:
 
   - uid: dlands-4846-III
     button:
-      label: DLN
+      label: DLNS
       class: h3b
-    olayer_: dln
-    label: D_Lands-N
+    olayer_: dlns
+    label: D_Lands-NS
     visible: false
     minZoom: 15  
 #    #url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows

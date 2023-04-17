@@ -7,7 +7,7 @@ zoom: 6
 xyIgnore: [718573.61, 1447971.39]
 #xyIgnore: [718573.61, 1517971.39]
 #lonlat: [100.6452, 13.7660]
-lonlat: [101.0, 13.5]
+lonlat: [101.5, 14.0]
 xy_projection: EPSG:3857
 
 

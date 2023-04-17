@@ -305,8 +305,8 @@ layers:
       format: image/png
       VERSION: 1.3.0
       #viewparams: [utmmap:51363, utmmap:51364]
-      #viewparams: utmmap:51363,utmmap:51364,utmmap:51362
-      viewparams: utmmap:51363,51364,51362
+      viewparams: utmmap:51363,utmmap:51364,utmmap:50362,utmmap:50361
+      #viewparams: utmmap:51363,51364,51362
       #viewparams: 'utmmap:51363\,51364\,51362'
       #viewparams: utmmap:51363;51364
       #viewparams: utmmap:51363
@@ -315,7 +315,7 @@ layers:
       #request: GetFeature
       srsname: EPSG:24047
       STYLES: ''
-      LAYERS: V_PARCEL47,V_PARCEL47,V_PARCEL47
+      LAYERS: V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47
       exceptions: application/vnd.ogc.se_inimage
 
 #  - uid: tdlands

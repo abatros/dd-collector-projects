@@ -280,7 +280,7 @@ layers:
     params:
       format: image/png
       VERSION: 1.3.0
-      viewparams: utmmap:548463,utmmap:48464,utmmap:47462,utmmap:47461,utmmap:50221,utmmpa:51224,utmmap:51233,50232
+      viewparams: utmmap:548463,utmmap:48464,utmmap:47462,utmmap:47461,utmmap:50221,utmmpa:51224,utmmap:51233,utmmap:50232
       tiled: true
       #request: GetFeature
       srsname: EPSG:24047

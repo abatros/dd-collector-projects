@@ -296,7 +296,7 @@ layers:
       LAYERS: V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL47,V_PARCEL47,V_PARCEL47
       exceptions: application/vnd.ogc.se_inimage
 
-  - uid: dlands-5136-III
+  - uid: dlands-Bangkok-Middle
     button:
       label: DLB
       class: h3b
@@ -329,6 +329,7 @@ layers:
       #srsname: EPSG:24047
       STYLES: ''
       LAYERS: V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47
+      #viewparams & LAYERS have to be matched one by one
       exceptions: application/vnd.ogc.se_inimage
 
 #  - uid: tdlands

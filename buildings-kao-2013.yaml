@@ -312,13 +312,14 @@ layers:
       format: image/png
       VERSION: 1.3.0
       #viewparams: [utmmap:51363, utmmap:51364]
-      viewparams: utmmap:51363,utmmap:51364,utmmap:50362,utmmap:50361,utmmap:51341,utmmap:52344,utmmap:52353,utmmap:52354,utmmap:51351,utmmap:51352,utmmap:48372,utmmap:49373,utmmap:49364,utmmap:48361,utmmap:52373,utmmap:52372,utmmap:52341,utmmap:52342,utmmap:52343,utmmap52344
+      viewparams: utmmap:51363,utmmap:51364,utmmap:50362,utmmap:50361,utmmap:51341,utmmap:52344,utmmap:52353,utmmap:52354,utmmap:51351,utmmap:51352,utmmap:48372,utmmap:49373,utmmap:49364,utmmap:48361,utmmap:52373,utmmap:52372,utmmap:52341,utmmap:52342,utmmap:52343,utmmap52344,utmmap:51374
       #//Bangkok[51363,51364,50362,50361]
       #//Pattaya[51341,52344]
       #//Chonburi[52353,52354,51351,51352]
       #//Kanchanaburi[48372,49373,49364,48361]
       #//Nakonnayok[52373,52372]
       #//Rayong[52341,52342,52343,52344]
+      #//Ayuthaya[51374]
       #//----
       #viewparams: utmmap:51363,51364,51362
       #viewparams: 'utmmap:51363\,51364\,51362'
@@ -329,7 +330,7 @@ layers:
       #request: GetFeature
       #srsname: EPSG:24047
       STYLES: ''
-      LAYERS: V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47
+      LAYERS: V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47
       #//viewparams & LAYERS have to be matched one by one
       exceptions: application/vnd.ogc.se_inimage
 

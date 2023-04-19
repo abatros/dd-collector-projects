@@ -281,7 +281,7 @@ layers:
     params:
       format: image/png
       VERSION: 1.3.0
-      viewparams: utmmap:49481,utmmap:49492,utmmap:50403,utmmap:50404,utmmap:48463,utmmap:48464,utmmap:47462,utmmap:47461,utmmap:50221,utmmap:51224,utmmap:51233,utmmap:50232,utmmap:46241,utmmap:46252,utmmap:56384,utmmap:56393,utmmap:55411,utmmap:55422,utmmap:48272,utmmap:49273,utmmap:49272,utmmap:59391,utmmap:59392,utmmap:54384,utmmap:54393,utmmap:55341,utmmap:55434,utmmap:52221,utmmap:52222,utmmap:52223,utmmap:52224
+      viewparams: utmmap:49481,utmmap:49492,utmmap:50403,utmmap:50404,utmmap:48463,utmmap:48464,utmmap:47462,utmmap:47461,utmmap:50221,utmmap:51224,utmmap:51233,utmmap:50232,utmmap:46241,utmmap:46252,utmmap:56384,utmmap:56393,utmmap:55411,utmmap:55422,utmmap:48272,utmmap:49273,utmmap:49272,utmmap:59391,utmmap:59392,utmmap:54384,utmmap:54393,utmmap:55431,utmmap:55434,utmmap:52221,utmmap:52222,utmmap:52223,utmmap:52224
       #//Chiangrai[49481,49492]
       #//Nakonsawan[50403,50404]
       #//Chiangmai[48463,48464,47462,47461]

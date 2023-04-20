@@ -183,6 +183,7 @@ layers:
     label: V-layer
     visible: true
     source: GeoJSON
+    wrapX: false
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
     params:
       service: WFS

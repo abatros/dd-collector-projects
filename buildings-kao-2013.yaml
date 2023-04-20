@@ -275,7 +275,7 @@ layers:
     label: D_Lands-NS
     visible: false
     minZoom: 15  
-#    #url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows
+    #url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows
     url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows
     source: TileWMS
     crossOrigin: anonymous
@@ -311,7 +311,7 @@ layers:
     label: D_Lands-B
     visible: true
     minZoom: 15  
-#    #url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows
+    #url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows
     url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows
     source: TileWMS
     crossOrigin: anonymous

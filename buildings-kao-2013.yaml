@@ -300,8 +300,8 @@ layers:
       tiled: true
       #request: GetFeature
       #srsname: EPSG:24047
-      #STYLES: ''
-      sld: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/vpar_style.sld
+      STYLES: ''
+      #SLD: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/vpar_style.sld
       LAYERS: V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47
       exceptions: application/vnd.ogc.se_inimage
 

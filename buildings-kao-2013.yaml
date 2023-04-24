@@ -329,7 +329,8 @@ layers:
       format: image/png
       VERSION: 1.3.0
       #viewparams: [utmmap:51363, utmmap:51364]
-      viewparams: utmmap:51363,utmmap:51364,utmmap:50362,utmmap:50361,utmmap:51341,utmmap:52344,utmmap:52353,utmmap:52354,utmmap:51351,utmmap:51352,utmmap:48372,utmmap:49373,utmmap:49364,utmmap:48361,utmmap:52373,utmmap:52372,utmmap:52341,utmmap:52342,utmmap:52343,utmmap52344,utmmap:51373,utmmap:51374,utmmap:51361,utmmap:51362,utmmap:52363,utmmap:52364,utmmap:49361,utmmap:49362,utmmap:50363,utmmap:50364,utmmap:49351,utmmap:49352,utmmap:50353,utmmap:50354,utmmap:50371,utmmap:50374,utmmap:50382,utmmap:50383
+      viewparams: utmmap:51363      
+      #viewparams: utmmap:51363,utmmap:51364,utmmap:50362,utmmap:50361,utmmap:51341,utmmap:52344,utmmap:52353,utmmap:52354,utmmap:51351,utmmap:51352,utmmap:48372,utmmap:49373,utmmap:49364,utmmap:48361,utmmap:52373,utmmap:52372,utmmap:52341,utmmap:52342,utmmap:52343,utmmap52344,utmmap:51373,utmmap:51374,utmmap:51361,utmmap:51362,utmmap:52363,utmmap:52364,utmmap:49361,utmmap:49362,utmmap:50363,utmmap:50364,utmmap:49351,utmmap:49352,utmmap:50353,utmmap:50354,utmmap:50371,utmmap:50374,utmmap:50382,utmmap:50383
       #//Bangkok[51363,51364,50362,50361]
       #//Pattaya[51341,52344]
       #//Chonburi[52353,52354,51351,51352]
@@ -345,17 +346,16 @@ layers:
       #viewparams: utmmap:51363,51364,51362
       #viewparams: 'utmmap:51363\,51364\,51362'
       #viewparams: utmmap:51363;51364
-      #viewparams: utmmap:51363
       #viewparams: utmmap:51364
       tiled: true
       #request: GetFeature
       #srsname: EPSG:24047
-      STYLES: ''
-      #STYLES: vpar
-      #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/vpar.sld
+      #STYLES: ''
+      STYLES: vpar
+      SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/vpar3.sld
       #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/67505666904c2f435f6ee0c93822fe5b89edc88f/vpar.sld
-      #LAYERS: V_PARCEL47
-      LAYERS: V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47
+      LAYERS: V_PARCEL47
+      #LAYERS: V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47
       #//viewparams & LAYERS have to be matched one by one
       exceptions: application/vnd.ogc.se_inimage
 

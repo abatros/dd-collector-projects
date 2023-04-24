@@ -11,7 +11,8 @@
     <UserStyle>
     <!-- Styles can have names, titles and abstracts -->
       <Name>vpar</Name>
-      <Title>Polygon</Title>
+      <Title>Land Parcel</Title>
+      <IsDefault>1</IsDefault>
       <Abstract>A sample style that draws a polygon</Abstract>
       <!-- FeatureTypeStyles describe how to render different features -->
       <!-- A FeatureTypeStyle for rendering polygons -->

@@ -19,7 +19,7 @@
             <CssParameter name="fill-opacity">.2</CssParameter>
           </Fill>
           <Stroke>
-            <CssParameter name="stroke">#FFFF00</CssParameter>
+            <CssParameter name="stroke">#88FF88</CssParameter>
             <CssParameter name="stroke-opacity">1</CssParameter>
             <CssParameter name="stroke-width">2</CssParameter>
             <CssParameter name="stroke-dasharray">10 5 5 2 5 5 2 5</CssParameter>            

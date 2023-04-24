@@ -46,7 +46,7 @@
             </Geometry>
             
             <Label>
-              <ogc:PropertyName>PROV_NAM_E</ogc:PropertyName>
+              <ogc:PropertyName>P_CODE</ogc:PropertyName>
             </Label>
 
             <Font>

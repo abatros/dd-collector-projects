@@ -10,7 +10,8 @@
     <Name>V_PARCEL47</Name>
     <UserStyle>
     <!-- Styles can have names, titles and abstracts -->
-      <Title>Default Polygon</Title>
+      <Name>vpar</Name>
+      <Title>Polygon</Title>
       <Abstract>A sample style that draws a polygon</Abstract>
       <!-- FeatureTypeStyles describe how to render different features -->
       <!-- A FeatureTypeStyle for rendering polygons -->

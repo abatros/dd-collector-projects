@@ -7,7 +7,7 @@
  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <!-- a Named Layer is the basic building block of an SLD document -->
   <NamedLayer>
-    <Name>LANDSMAPS:V_PARCEL47</Name>
+    <Name>V_PARCEL47</Name>
     <UserStyle>
     <!-- Styles can have names, titles and abstracts -->
       <Name>vpar</Name>

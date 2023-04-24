@@ -303,7 +303,7 @@ layers:
       tiled: true
       #request: GetFeature
       #srsname: EPSG:24047
-      STYLES: ''
+      #STYLES: ''
       STYLES: vpar
       #SLD: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/vpar_style.sld
       SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/vpar.sld

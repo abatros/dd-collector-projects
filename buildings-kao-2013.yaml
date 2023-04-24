@@ -352,7 +352,8 @@ layers:
       #srsname: EPSG:24047
       #STYLES: ''
       STYLES: vpar
-      SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/vpar3.sld
+      #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/vpar3.sld
+      SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/fade61dee826d85030fd1c324d266a77f822852c/vpar3.sld
       #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/67505666904c2f435f6ee0c93822fe5b89edc88f/vpar.sld
       LAYERS: V_PARCEL47
       #LAYERS: V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47

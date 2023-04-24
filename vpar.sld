@@ -5,7 +5,7 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <NamedLayer>
-    <Name>province</Name>
+    <Name>V_PARCEL47</Name>
     <UserStyle>
       <Name>vpar</Name>
       <Title>geoserver style</Title>
@@ -21,7 +21,7 @@
             <CssParameter name="fill-opacity">.3</CssParameter>
           </Fill>
           <Stroke>
-            <CssParameter name="stroke">#FF0000</CssParameter>
+            <CssParameter name="stroke">#884400</CssParameter>
             <CssParameter name="stroke-opacity">1</CssParameter>
             <CssParameter name="stroke-width">2</CssParameter>
           </Stroke>
@@ -41,15 +41,15 @@
             <Geometry>
                 <!-- <ogc:Function name="centroid"> -->
                 <ogc:Function name="centroid">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
+                  <ogc:PropertyName>geom</ogc:PropertyName>
                   <!-- <ogc:Literal>1.0</ogc:Literal> -->
                 </ogc:Function>
             </Geometry>
-            <<!--
+            
             <Label>
               <ogc:PropertyName>utmparno</ogc:PropertyName>
             </Label>
-            -->>
+            
             <Font>
               <CssParameter name="font-family">Purisa</CssParameter>
               <CssParameter name="font-style">Normal</CssParameter>

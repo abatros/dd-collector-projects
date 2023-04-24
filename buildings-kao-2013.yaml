@@ -344,7 +344,7 @@ layers:
       #viewparams: utmmap:51363,51364,51362
       #viewparams: 'utmmap:51363\,51364\,51362'
       #viewparams: utmmap:51363;51364
-      viewparams: utmmap:51363
+      #viewparams: utmmap:51363
       #viewparams: utmmap:51364
       tiled: true
       #request: GetFeature

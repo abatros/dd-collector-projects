@@ -5,7 +5,7 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <NamedLayer>
-    <Name>LANDSMAPS:V_PARCEL47</Name>
+    <Name>v_parcel47</Name>
     <UserStyle>
       <Name>vpar</Name>
       <Title>geoserver style</Title>

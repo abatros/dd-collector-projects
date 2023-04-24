@@ -64,7 +64,8 @@ layers:
       #request: GetFeature
       #STYLES: ''
       STYLES: prov
-      SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/province.sld
+      #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/province.sld
+      SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/6ee9462f9e21cd6a01c9e46b49bf37a227355e2a/province.sld
       LAYERS: thgeom:province
       exceptions: application/vnd.ogc.se_inimage
 

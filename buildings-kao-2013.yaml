@@ -62,7 +62,9 @@ layers:
       VERSION: 1.3.0
       tiled: true
       #request: GetFeature
-      STYLES: ''
+      #STYLES: ''
+      STYLES: prov
+      SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/province.sld
       LAYERS: thgeom:province
       exceptions: application/vnd.ogc.se_inimage
 

@@ -43,11 +43,11 @@
                   <!-- <ogc:Literal>1.0</ogc:Literal> -->
                 </ogc:Function>
             </Geometry>
-            
+            <<!--
             <Label>
               <ogc:PropertyName>PROV_NAM_T</ogc:PropertyName>
             </Label>
-
+            -->>
             <Font>
               <CssParameter name="font-family">Purisa</CssParameter>
               <CssParameter name="font-style">Normal</CssParameter>

@@ -40,7 +40,7 @@
             <Geometry>
                 <!-- <ogc:Function name="centroid"> -->
                 <ogc:Function name="centroid">
-                  <ogc:PropertyName>the_geom</ogc:PropertyName>
+                  <ogc:PropertyName>geom</ogc:PropertyName>
                   <!-- <ogc:Literal>1.0</ogc:Literal> -->
                 </ogc:Function>
             </Geometry>

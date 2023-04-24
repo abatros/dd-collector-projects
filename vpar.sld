@@ -5,7 +5,7 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <NamedLayer>
-    <Name>V_PARCEL47</Name>
+    <Name>LANDSMAPS:V_PARCEL47</Name>
     <UserStyle>
       <Name>vpar</Name>
       <Title>geoserver style</Title>
@@ -46,7 +46,7 @@
             </Geometry>
             
             <Label>
-              <ogc:PropertyName>UTMPARNO</ogc:PropertyName>
+              <ogc:PropertyName>utmparno</ogc:PropertyName>
             </Label>
 
             <Font>

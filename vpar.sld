@@ -5,7 +5,7 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 <NamedLayer>
-    <Name>LANDSMAPS:V_PARCE47</Name>
+    <Name>province</Name>
     <UserStyle>
       <Name>vpar</Name>
       <Title>geoserver style</Title>
@@ -14,7 +14,7 @@
       <FeatureTypeStyle>
       <Rule>
         <Title>Land Parcels</Title>
-	<MaxScaleDenominator>20000</MaxScaleDenominator>
+	<<!-- <MaxScaleDenominator>20000</MaxScaleDenominator> -->>
         <PolygonSymbolizer>
           <Fill>
             <CssParameter name="fill">#ffffff</CssParameter>
@@ -41,7 +41,7 @@
             <Geometry>
                 <!-- <ogc:Function name="centroid"> -->
                 <ogc:Function name="centroid">
-                  <ogc:PropertyName>geom</ogc:PropertyName>
+                  <ogc:PropertyName>th_geom</ogc:PropertyName>
                   <!-- <ogc:Literal>1.0</ogc:Literal> -->
                 </ogc:Function>
             </Geometry>

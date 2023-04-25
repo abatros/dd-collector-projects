@@ -73,7 +73,7 @@
               </Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#000044</CssParameter>
+              <CssParameter name="fill">#000088</CssParameter>
             </Fill>
             <VendorOption name="group">true</VendorOption>
             <VendorOption name="conflictResolution">true</VendorOption>

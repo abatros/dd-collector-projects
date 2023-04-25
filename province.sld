@@ -73,8 +73,8 @@
               </Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#ffffff</CssParameter>
-              <CssParameter name="fill-opacity">0.45</CssParameter>
+              <CssParameter name="fill">#000000</CssParameter>
+              <CssParameter name="fill-opacity">0.85</CssParameter>
             </Fill>
             <VendorOption name="group">true</VendorOption>
             <VendorOption name="conflictResolution">true</VendorOption>

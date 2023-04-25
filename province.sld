@@ -68,12 +68,12 @@
                 <ogc:Literal>1</ogc:Literal>
               </Radius>
               <Fill>
-                <CssParameter name="fill">#BB8866</CssParameter>
+                <CssParameter name="fill">#BB8822</CssParameter>
                 <CssParameter name="fill-opacity">0.55</CssParameter>
               </Fill>
             </Halo>
             <Fill>
-              <CssParameter name="fill">#000055</CssParameter>
+              <CssParameter name="fill">#000044</CssParameter>
             </Fill>
             <VendorOption name="group">true</VendorOption>
             <VendorOption name="conflictResolution">true</VendorOption>

@@ -288,7 +288,7 @@ layers:
       format: image/png
       VERSION: 1.3.0
       #viewparams: utmmap:49481
-      viewparams: utmmap:49481,utmmap:49492,utmmap:50403,utmmap:50404,utmmap:48463,utmmap:48464,utmmap:47462,utmmap:47461,utmmap:50221,utmmap:51224,utmmap:51233,utmmap:50232,utmmap:46241,utmmap:46252,utmmap:56384,utmmap:56393,utmmap:55411,utmmap:55422,utmmap:48272,utmmap:49273,utmmap:49272,utmmap:59391,utmmap:59392,utmmap:54384,utmmap:54393,utmmap:55431,utmmap:55434,utmmap:52221,utmmap:52222,utmmap:52223,utmmap:52224
+      viewparams: utmmap:49481,utmmap:49492,utmmap:50403,utmmap:50404,utmmap:48463,utmmap:48464,utmmap:47462,utmmap:47461,utmmap:50221,utmmap:51224,utmmap:51233,utmmap:50232,utmmap:46241,utmmap:46252,utmmap:56384,utmmap:56393,utmmap:55411,utmmap:55422,utmmap:48272,utmmap:49273,utmmap:49272,utmmap:59391,utmmap:59392,utmmap:54384,utmmap:54393,utmmap:55431,utmmap:55434,utmmap:52221,utmmap:52222,utmmap:52223,utmmap:52224,utmmap:45471
       #//Chiangrai[49481,49492]
       #//Nakonsawan[50403,50404]
       #//Chiangmai[48463,48464,47462,47461]
@@ -301,6 +301,7 @@ layers:
       #//Nakonratchasima[54384,54393]
       #//Udornthani[55431,55434]
       #//Yala[52221,52222,52223,52224]
+      #//Maehongsorn[45471]
       #//----
       tiled: true
       #request: GetFeature
@@ -311,7 +312,7 @@ layers:
       #SLD: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/vpar_style.sld
       #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/vpar.sld
       #LAYERS: LANDSMAPS:V_PARCEL47
-      LAYERS: V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47,V_PARCEL47,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47,V_PARCEL47,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO
+      LAYERS: V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47,V_PARCEL47,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47,V_PARCEL47,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO
       exceptions: application/vnd.ogc.se_inimage
 
   - uid: dlands-Bangkok-Middle

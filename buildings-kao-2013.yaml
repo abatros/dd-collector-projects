@@ -58,6 +58,7 @@ layers:
     visible: false
     group: base-layers
     source: TileImage
+    attributions: 'Satellite data ©2023 Google'    
     url: https://mt1.google.com/vt/lyrs=s@189&hl=en&&x={x}&y={y}&z={z}
     #url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
     

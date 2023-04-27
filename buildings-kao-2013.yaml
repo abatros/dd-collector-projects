@@ -34,7 +34,7 @@ layers:
     group: base-layers
     source: XYZ
     gutter: 2
-    attributions: 'All maps © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    attributions: 'Maps © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
 
   - uid: arcgis-tiled

@@ -45,6 +45,7 @@ layers:
     group: base-layers
     source: XYZ
     gutter: 2
+    attributions: Tiles © <a href="https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer">ArcGIS</a>
     url: https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}
     
   - uid: GoogleSat

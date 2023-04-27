@@ -35,17 +35,6 @@ layers:
     gutter: 2
     url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
 
-  - uid: GoogleSat
-    button:
-      label: Sat
-      class: h2
-    label: GoogleSat
-    visible: false
-    group: base-layers
-    source: TileImage
-    url: https://mt1.google.com/vt/lyrs=s@189&hl=en&&x={x}&y={y}&z={z}
-    #url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
-
   - uid: arcgis-tiled
     button:
       label: A
@@ -57,6 +46,17 @@ layers:
     source: XYZ
     gutter: 2
     url: https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}
+    
+  - uid: GoogleSat
+    button:
+      label: Sat
+      class: h2
+    label: GoogleSat
+    visible: false
+    group: base-layers
+    source: TileImage
+    url: https://mt1.google.com/vt/lyrs=s@189&hl=en&&x={x}&y={y}&z={z}
+    #url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
     
   - uid: provinces-tiled
     label: provinces-tiled

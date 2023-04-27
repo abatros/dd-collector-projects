@@ -21,6 +21,7 @@ layers:
     visible: false
     group: base-layers
     source: TileImage
+    attributions: 'Map data ©2019 Google'
     url: https://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
 
   - uid: osm-tiled

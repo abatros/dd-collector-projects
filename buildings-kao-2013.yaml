@@ -226,39 +226,39 @@ layers:
         fill:
           color: rgba(255,20,100,0.5)
 
-  - uid: vis-lands
-    label: Lands
-    button:
-      class: h3b
-      label: LP
-    visible: false
-    minZoom: 12
-    extent: 100.95, 13.05, 101.15, 13.25
-    source: GeoJSON
-    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
-    params:
-      service: WFS
-      version: 2.0.0
-      request: GetFeature
-      typename: thgeom:vis-data-land
-      outputFormat: application/json
-      format_options: callback:loadFeatures
-      srsname: EPSG:32647
-      bbox: extent
-      exception: application/json
-    style:
-      stroke:
-        color: rgba(255, 64, 0, 1.0)
-        width: 0.85
-      fill:
-        color: rgba(200, 255, 200, 0.15)
-      circle:
-        radius: 7
-        fill:
-          color: rgba(255,20,255,0.5)
-        stroke:
-          color: rgba(255, 255, 0, 1.0)
-          width: 1
+#  - uid: vis-lands
+#    label: Lands
+#    button:
+#      class: h3b
+#      label: LP
+#    visible: false
+#    minZoom: 12
+#    extent: 100.95, 13.05, 101.15, 13.25
+#    source: GeoJSON
+#    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+#    params:
+#      service: WFS
+#      version: 2.0.0
+#      request: GetFeature
+#      typename: thgeom:vis-data-land
+#      outputFormat: application/json
+#      format_options: callback:loadFeatures
+#      srsname: EPSG:32647
+#      bbox: extent
+#      exception: application/json
+#    style:
+#      stroke:
+#        color: rgba(255, 64, 0, 1.0)
+#        width: 0.85
+#      fill:
+#        color: rgba(200, 255, 200, 0.15)
+#      circle:
+#        radius: 7
+#        fill:
+#          color: rgba(255,20,255,0.5)
+#        stroke:
+#          color: rgba(255, 255, 0, 1.0)
+#          width: 1
 
   - uid: vis-buildings
     label: vis-Buildings
@@ -375,7 +375,7 @@ layers:
       #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/fade61dee826d85030fd1c324d266a77f822852c/vpar3.sld
       #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/67505666904c2f435f6ee0c93822fe5b89edc88f/vpar.sld
       #LAYERS: V_PARCEL47_LANDNO
-      LAYERS: V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO
+      LAYERS: V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO
       #//viewparams & LAYERS have to be matched one by one
       exceptions: application/vnd.ogc.se_inimage
 

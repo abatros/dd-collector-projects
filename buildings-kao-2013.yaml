@@ -201,7 +201,7 @@ layers:
       class: h1
       label: V
     label: V-layer
-    visible: true
+    visible: false
     source: GeoJSON
     wrapX: false
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows

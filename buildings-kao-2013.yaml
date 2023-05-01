@@ -204,7 +204,7 @@ layers:
     visible: true
     source: GeoJSON
     wrapX: false
-    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     params:
       service: WFS
       version: 2.0.0
@@ -212,7 +212,7 @@ layers:
       typename: thgeom:oacs-geo-view-dd-maps
       outputFormat: application/json
       format_options: callback:loadFeatures
-      srsname: EPSG:3857
+      #srsname: EPSG:3857
       bbox: extent
       exception: application/json
     style:

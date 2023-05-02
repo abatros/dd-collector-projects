@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+Ķ<?xml version="1.0" encoding="UTF-8"?>
 <StyledLayerDescriptor version="1.0.0"
   xsi:schemaLocation="http://www.opengis.net/sld StyledLayerDescriptor.xsd"
   xmlns="http://www.opengis.net/sld" xmlns:ogc="http://www.opengis.net/ogc"
@@ -65,11 +65,11 @@
             </LabelPlacement>
             <Halo>
               <Radius>
-                <ogc:Literal>0.5</ogc:Literal>
+                <ogc:Literal>0.25</ogc:Literal>
               </Radius>
               <Fill>
-                <CssParameter name="fill">#558822</CssParameter>
-                <CssParameter name="fill-opacity">0.35</CssParameter>
+                <CssParameter name="fill">#556622</CssParameter>
+                <CssParameter name="fill-opacity">0.25</CssParameter>
               </Fill>
             </Halo>
             <Fill>

@@ -65,7 +65,7 @@
             </LabelPlacement>
             <Halo>
               <Radius>
-                <ogc:Literal>0.25</ogc:Literal>
+                <ogc:Literal>0.5</ogc:Literal>
               </Radius>
               <Fill>
                 <CssParameter name="fill">#556622</CssParameter>

@@ -18,7 +18,7 @@
         <PolygonSymbolizer>
           <Fill>
             <CssParameter name="fill">#ffffff</CssParameter>
-            <CssParameter name="fill-opacity">.3</CssParameter>
+            <CssParameter name="fill-opacity">0.3</CssParameter>
           </Fill>
           <Stroke>
             <CssParameter name="stroke">#884400</CssParameter>
@@ -59,7 +59,7 @@
             <LabelPlacement>
               <PointPlacement>
                 <AnchorPoint>
-                  <AnchorPointX>0.25</AnchorPointX>
+                  <AnchorPointX>0.5</AnchorPointX>
                   <AnchorPointY>0.5</AnchorPointY>
                 </AnchorPoint>
               </PointPlacement>

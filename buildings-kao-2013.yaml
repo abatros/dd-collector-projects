@@ -212,7 +212,7 @@ layers:
       typename: thgeom:oacs-geo-view-dd-maps
       outputFormat: application/json
       format_options: callback:loadFeatures
-      #srsname: EPSG:3857
+      #srsname: EPSG:4326
       bbox: extent
       exceptions: application/json
     style:

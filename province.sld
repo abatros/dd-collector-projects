@@ -65,11 +65,11 @@
             </LabelPlacement>
             <Halo>
               <Radius>
-                <ogc:Literal>1</ogc:Literal>
+                <ogc:Literal>0.5</ogc:Literal>
               </Radius>
               <Fill>
-                <CssParameter name="fill">#BB8822</CssParameter>
-                <CssParameter name="fill-opacity">0.55</CssParameter>
+                <CssParameter name="fill">#558822</CssParameter>
+                <CssParameter name="fill-opacity">0.35</CssParameter>
               </Fill>
             </Halo>
             <Fill>

@@ -229,7 +229,7 @@ layers:
   - uid: v-layer-IMG
     button:
       class: h2
-      label: Vi
+      label: Tt
     label: v-layer-IMG
     visible: false
     minZoom: 4

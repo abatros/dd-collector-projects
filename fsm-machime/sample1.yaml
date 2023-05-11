@@ -1,13 +1,15 @@
 name: test1
 
 comm: >
-  (1) Need to declare a name for each state.
+  (1) FIRST: give a name for each state.
   (2) for each state, "Enter" is the operation executed when entering the state. Can be undefined.
   (3) "Enter" is not same as Transition.
-  (4) "Enter" will update the list of "enabled" actions/transitions for the new machine-state.
+  (4) "Enter" will update the list of "enabled" triggers/actions/transitions for the new machine-state.
   (5) "Transition" is executed after the new state is established.
   (6) The transition executed must match (from-state, to-state) from the list of transitions.
-  (7) Some states are a-stable: meaning they immediately jump to another state. Ex: "commited" is "astable"
+  (7) Some states are "a-stable" : meaning they immediately jump to another state. Ex: "commited" is "astable"
+  (8) Some transitions have no "from-state" : they are "enabled" in all states.
+  
   
 states:
   - name: idle

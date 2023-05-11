@@ -1,0 +1,28 @@
+machine:
+  -name: dd-collector
+  -states:
+    - name: q0-idle
+      comm: initial state.
+
+    - name: q1-feature-selected
+      comm: user did click on a feature.
+      
+    - name: q2-feature-editing
+      comm: |
+        User is filling or reviewing a form
+        At this point the form is the new running sub-process
+        Quit or Commit in the form will terminate this sub-process
+        and return control to the machine in state q0.
+        
+        
+    - name: edit-feature::init
+      comm: request edit-feature without selecting a feature
+        
+    - name: edit-feature::feature-selected
+    
+  -transitions:
+    - from: q0-idle
+      to: q1-feature-selected
+      comm: >
+        trigger here is mouse click on feature.
+      

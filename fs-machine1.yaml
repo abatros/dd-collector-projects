@@ -1,6 +1,6 @@
 machine:
-  -name: dd-collector
-  -states:
+  name: dd-collector
+  states:
     - name: q0-idle
       comm: initial state.
 
@@ -20,9 +20,19 @@ machine:
         
     - name: edit-feature::feature-selected
     
-  -transitions:
+  transitions:
     - from: q0-idle
       to: q1-feature-selected
       comm: >
         trigger here is mouse click on feature.
+    
+    - from: q1-feature-selected
+      to: q2-feature-editing
+      comm: >
+        click on r-panel button "edit-feature"
+      trigger: "edit-feature"
+      shortcut: KeyE alt ctrl
+      canMake
+      afterTransition
+      
       

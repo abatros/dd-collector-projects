@@ -1,0 +1,35 @@
+
+#    Event-based, time-based, and Promise-based triggers/actions
+#    Entry, exit, and transition actions
+#    Guard conditions
+#    Self-transitions and internal transitions
+#    Hierarchical state machines
+#    State machine event hooks
+
+
+name: sample2
+parser: uraltsev
+link: https://github.com/nickuraltsev/finity
+
+global:
+  enter: onStateEnter
+  # onStateEnter(state)
+
+states:
+  - name: ready 
+    # will be the initial state.
+    trigger: task_submitted
+    transitionTo: running
+    
+  - name: running
+    enter: processTaskAsync
+    # enter(state,context) => processTaaskAsync(context.eventPayload)
+    - trigger: success
+      transitionTo: succeeded
+      
+    - trigger: failed
+      transitionTo: failed
+      
+    - trigger: time-out
+      transistinTo: timed-out
+  

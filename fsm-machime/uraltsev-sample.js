@@ -23,9 +23,11 @@ states:
   ####################
 
   - state: ready
-    # will be the initial state.
-    trigger: task_submitted
-    transitionTo: running
+    # first declared state is the initial state.
+
+    actions:
+      - trigger: submit-a-task
+        transitionTo: running
 
   ####################
   ## RUNNING
@@ -33,29 +35,33 @@ states:
 
   - state: running
     actions:
-      - enter:
+      - on: Enter
         do: processTaskAsync
         message: entering running state
-      - exit: abc
+        # enter(state,context) => processTaaskAsync(context.eventPayload)
+
+
+      - on: Exit
         message: leaving running state
-      - exit: abc
+
+      - on: Exit
         message: another message, showing we can stack multiple action on entry or exit
         #do: something_weird
 
-    # enter(state,context) => processTaaskAsync(context.eventPayload)
 
-      - trigger: success
+      - on: success
         transitionTo: succeeded
         # event/trigger based.
 
-      - trigger: failed
+      - on: failed
         transitionTo: failed
 
-      - timer: 300
+      - onTimeOut: 300
         transitionTo: timed-out
 
-      - trigger: default
+      - on: default
         transitionTo: broken
+
 
   ####################
   ## SUCCESS
@@ -82,8 +88,8 @@ states:
 
   - state: posted
     actions:
-      - message: successfuly posted. Congratulations.
-        type: enter
+      - on: Enter
+        message: successfuly posted. Congratulations.
 
   ####################
   ## TIMED-OUT

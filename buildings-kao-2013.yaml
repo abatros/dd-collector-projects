@@ -239,12 +239,13 @@ layers:
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     url: https://maps-cartes.services.geo.ca:443/server_serveur/services/NRCan/uav_survey_cambridge_bay_nunavut_fr/MapServer/WmsServer?
-    source: TileWMS
+    #source: TileWMS
+    source: ImageWMS
     params:
       service: WMS
       format: image/png
       VERSION: 1.1.1
-      tiled: true
+      #tiled: true
       #request: GetFeature
       srsname: EPSG:4326
       STYLES: ''

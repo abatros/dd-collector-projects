@@ -243,7 +243,7 @@ layers:
     params:
       service: WMS
       format: image/png
-      VERSION: 1.3.0
+      VERSION: 1.1.1
       tiled: true
       #request: GetFeature
       srsname: EPSG:4326

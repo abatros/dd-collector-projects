@@ -238,7 +238,7 @@ layers:
     #extent: 100.48873901367188, 13.670610427856445, 100.68555450439453, 13.894135475158691
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
-    url: https://maps-cartes.services.geo.ca:443/server_serveur/services/NRCan/uav_survey_cambridge_bay_nunavut_fr/MapServer/WmsServer?
+    url: https://maps-cartes.services.geo.ca:443/server_serveur/services/NRCan/uav_survey_cambridge_bay_nunavut_fr/MapServer/WmsServer
     #source: TileWMS
     source: ImageWMS
     params:

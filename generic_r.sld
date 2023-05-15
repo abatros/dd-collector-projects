@@ -8,6 +8,7 @@
   <NamedLayer>
     <Name>generic</Name>
     <UserStyle>
+      <Name>generic</Name>
       <Title>Generic</Title>
       <Abstract>Generic style</Abstract>
       <FeatureTypeStyle>

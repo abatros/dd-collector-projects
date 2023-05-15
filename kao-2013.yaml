@@ -3,10 +3,10 @@ name: kao-2013
 pretty_name: Teak-Research (2013)
 comment: |
   button P5
-zoom: 10
+zoom: 12
 xyIgnore: [718573.61, 1447971.39]
 #xyIgnore: [718573.61, 1517971.39]
-lonlat: [100.6452, 13.7660]
+lonlat: [100.55, 13.66]
 xy_projection: EPSG:3857
 
 

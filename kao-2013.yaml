@@ -240,7 +240,7 @@ layers:
       class: h3b
     olayer_: dlb
     label: D_Lands-B
-    visible: true
+    visible: false
     minZoom: 15  
     #url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows
     url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows

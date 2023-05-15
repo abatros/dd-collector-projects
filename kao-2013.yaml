@@ -106,7 +106,6 @@ layers:
       #request: GetFeature
       srsname: EPSG:4326
       STYLES: ''
-      SLD: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/generic_r.sld
       WIDTH: 128
       HEIGHT: 128
       LAYERS: thgeom:BLDG_new_region
@@ -226,7 +225,9 @@ layers:
       tiled: true
       #request: GetFeature
       #srsname: EPSG:4326
-      STYLES: ''
+      #STYLES: ''
+      STYLES: generic
+      SLD: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/generic_r.sld
       WIDTH: 128
       HEIGHT: 128
       LAYERS: thgeom:oacs-geo-view-teak-research

@@ -6,7 +6,7 @@
                        xmlns:xlink="http://www.w3.org/1999/xlink" 
                        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <NamedLayer>
-    <Name>generic</Name>
+    <Name>thgeom:oacs-geo-view-teak-research</Name>
     <UserStyle>
       <Name>generic</Name>
       <Title>Generic</Title>

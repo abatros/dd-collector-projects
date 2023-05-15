@@ -89,7 +89,7 @@ layers:
       class: h2
       label: Bi
     label: buildings-IMG
-    visible: true
+    visible: false
     minZoom: 15
     gutter: 2
     transition: 0
@@ -116,7 +116,7 @@ layers:
     button:
       class: h3b
       label: Bv
-    visible: true
+    visible: false
     minZoom: 17
     source: GeoJSON
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows

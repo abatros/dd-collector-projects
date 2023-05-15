@@ -225,9 +225,9 @@ layers:
       tiled: true
       #request: GetFeature
       #srsname: EPSG:4326
-      #STYLES: ''
-      STYLES: generic
-      SLD: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/generic_r.sld
+      STYLES: ''
+      #STYLES: generic
+      #SLD: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/generic_r.sld
       WIDTH: 128
       HEIGHT: 128
       LAYERS: thgeom:oacs-geo-view-teak-research

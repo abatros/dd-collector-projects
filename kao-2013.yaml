@@ -131,7 +131,7 @@ layers:
       bbox: extent
       #maxFeatures: 1000
       #count: 2000
-      exception: application/json
+      exceptions: application/json
     style:
       stroke:
         color: rgba(0, 150, 255, 1.0)
@@ -157,7 +157,7 @@ layers:
       outputFormat: application/json
       format_options: callback:loadFeatures
       srsname: EPSG:32647
-      exception: application/json
+      exceptions: application/json
     style:
       stroke:
         color: rgba(255, 0, 255, 1.0)
@@ -190,7 +190,7 @@ layers:
       format_options: callback:loadFeatures
       srsname: EPSG:3857
       bbox: extent
-      exception: application/json
+      exceptions: application/json
     style:
       stroke:
         color: rgba(200, 0, 200, 0.5)

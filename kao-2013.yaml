@@ -180,7 +180,7 @@ layers:
     label: V-layer
     visible: true
     source: GeoJSON
-    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wfs
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     params:
       service: WFS
       version: 2.0.0
@@ -188,7 +188,7 @@ layers:
       typename: thgeom:oacs-geo-view-teak-research
       outputFormat: application/json
       format_options: callback:loadFeatures
-      srsname: EPSG:3857
+      #srsname: EPSG:3857
       bbox: extent
       exceptions: application/json
     style:
@@ -198,7 +198,7 @@ layers:
       fill:
         color: rgba(240, 240, 255, 0.3)
       circle:
-        radius: 7
+        radius: 8
         fill:
           color: rgba(255,20,100,0.5)
 

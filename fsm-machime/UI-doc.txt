@@ -1,4 +1,3 @@
-sketch      A temporary layer to be used by i_Draw and i_Modify
 
 active_form   Svelte/store : set to required form (svelte/co) will automatically open the component.
               This operate on z-index:1000
@@ -15,6 +14,8 @@ saved_geometry        selected_feature.getGeometry().clone()
 
 modified_feature      updated after each "modifyend"
                       used to control "commit" button state.
+
+sketch      A temporary layer to be used by i_Draw and i_Modify
 
 
 Methods

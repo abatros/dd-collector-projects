@@ -40,6 +40,7 @@ UI.start_measuring()
 UI.lear_measure()
 UI.open_photo_overlay()
 
+UI.getLayer_feature(f)                 scan all layers to locate a feature
 
 ASYNC/PROMISE FUNCTIONS: to be used in fsm.do()
 ===============================================

@@ -1,0 +1,17 @@
+Methods
+=======
+
+UI.erase_sketch()
+UI.onEnter_p1()                       initialization - Mode p1 : wait for a selection.
+UI.start_measure(drawType)            enter in Mode "measure"
+UI.clear_measure()
+UI.restore_original_feature()
+UI.remove_Interaction(i)
+UI.enter_edit_geometry()
+
+ASYNC/PROMISE FUNCTIONS: to be used in fsm.do()
+===============================================
+
+UI.commit_geometry()                  with default feature attributes
+UI.open_form_async()                  specified in UI.form_Name
+UI.delete_selected_feature()

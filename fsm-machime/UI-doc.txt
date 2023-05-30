@@ -17,6 +17,7 @@ modified_feature      updated after each "modifyend"
 
 sketch      A temporary layer to be used by i_Draw and i_Modify
 
+package_id    Need to be available for modules accessing the database.
 
 Methods
 =======
@@ -46,3 +47,23 @@ ASYNC/PROMISE FUNCTIONS: to be used in fsm.do()
 UI.commit_geometry()                  with default feature attributes
 UI.open_form_async()                  specified in UI.form_Name
 UI.delete_selected_feature()
+
+
+Controlling feature DIRTY state
+===============================
+- 1. select feature, open form => not dirty
+- 2. select feature, F2 (edit geometry), modify geometry, open-form => DIRTY
+      because modified_feature
+- 3. select feature, open form, edit input field => DIRTY
+
+Involved:
+  - commit_btn
+  - change_count
+  - input_count     number of keystrokes
+  - dirty : used in autorun => to update commit_btn disabled on/off
+  
+
+
+
+
+

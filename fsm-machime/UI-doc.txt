@@ -3,15 +3,18 @@ sketch      A temporary layer to be used by i_Draw and i_Modify
 active_form   Svelte/store : set to required form (svelte/co) will automatically open the component.
               This operate on z-index:1000
 
-i_Select    ol-Interaction - reusable.
-i_Draw      ol-Interaction
-i_Modify    ol-Interaction
+// To prevent multiple instances.
+i_Select    ol-Interaction  -> select
+i_Draw      ol-Interaction  -> drawstart, drawend
+i_Modify    ol-Interaction  -> modifystart, modifyend
 
-  selected_features: undefined, // from i_Select []
-  selected_feature: undefined,
-  saved_geometry: undefined, // cloned !!!
-  modified_geometry: undefined,
+// selected_features // from i_Select []
+selected_feature      after "select", found in i_Select
+saved_geometry        selected_feature.getGeometry().clone()
+                      original-geometry
 
+modified_feature      updated after each "modifyend"
+                      used to control "commit" button state.
 
 
 Methods

@@ -29,6 +29,13 @@ UI.restore_original_feature()
 UI.remove_Interaction(i)
 UI.enter_edit_geometry()
 
+UI.start_drawing()
+UI.enter_edit_geometry()
+UI.start_measuring()
+UI.lear_measure()
+UI.open_photo_overlay()
+
+
 ASYNC/PROMISE FUNCTIONS: to be used in fsm.do()
 ===============================================
 

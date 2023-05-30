@@ -15,7 +15,7 @@ saved_geometry        selected_feature.getGeometry().clone()
 modified_feature      updated after each "modifyend"
                       used to control "commit" button state.
 
-sketch      A temporary layer to be used by i_Draw and i_Modify
+sketch      A temporary layer used by i_Draw (and i_Modify ?)
 
 package_id    Need to be available for modules accessing the database.
 

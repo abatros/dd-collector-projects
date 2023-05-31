@@ -63,7 +63,11 @@ Involved:
   - input_count     number of keystrokes
   - dirty : used in autorun => to update commit_btn disabled on/off
   
+=========
+BUGS TODO
+=========
 
+* select line then escape then automatiquement back to polygon, but button still in Line.
 
 
 

@@ -1,0 +1,4 @@
+- styles OL
+- when editing new geometry, have vertices like when in F2
+- more display for errors
+- dd-collector/junior

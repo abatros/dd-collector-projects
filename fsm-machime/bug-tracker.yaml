@@ -1,0 +1,112 @@
+name: bug-tracker
+pretty_name: Bug
+package_key: bug-tracker
+object_type: bt-bug
+callbacks: >
+  bug_tracker.FormatLogTitle
+  bug_tracker.BugNotificationInfo
+  
+roles:
+  - role: submitter
+    pretty_name: Submitter
+    callbacks: >
+      workflow.Role_DefaultAssignees_CreationUser
+
+  - role: assignee
+     pretty_name: "Assignee",
+     callbacks: >
+        bug_tracker.ComponentMaintainer,
+        bug_tracker.ProjectMaintainer,
+        workflow.Role_PickList_CurrentAssignees,
+        workflow.Role_AssigneeSubquery_RegisteredUsers,
+
+states:
+  - state: open
+    pretty_name: Open
+    hide_fields: >
+      resolution
+      fixed_in_version
+
+  - state: resolved
+    pretty_name: Resolved
+
+  - state: closed
+    pretty_name: Closed
+
+actions:
+  - action: open
+    pretty_name: Open
+    pretty_past_tense: Opened
+    new_state: open
+    initial_action_p: true,
+
+  - action: comment
+    pretty_name: "Comment",
+    pretty_past_tense: "Commented",
+    allowed_roles: [ 'submitter', 'assignee' ],
+    privileges: [ 'read', 'write'],
+    always_enabled_p: true,
+
+	- action: edit
+	    pretty_name: Edit
+      pretty_past_tense: Edited
+      allowed_roles: [ 'submitter', 'assignee' ],
+      privileges: [ 'write' ],
+      always_enabled_p: true,
+
+
+
+	
+	
+      pretty_name: "Edit",
+      pretty_past_tense: "Edited",
+      allowed_roles: [ 'submitter', 'assignee' ],
+      privileges: [ 'write' ],
+      always_enabled_p: true,
+      edit_fields: [ 'component_id',
+                        'summary',
+                        'found_in_version',
+                        'role_assignee',
+                        'fix_for_version',
+                        'resolution',
+                        'fixed_in_version',
+
+    reassign: {
+      pretty_name: "Reassign",
+      pretty_past_tense: "Reassigned",
+      allowed_role: ['submitter', 'assignee'],
+      privileges: ['write'],
+      enabled_states: ['resolved'],
+      assigned_states: ['open'],
+      edit_fields: ['role_assignee'],
+    },
+
+    resolve: {
+      pretty_name: "Resolve",
+      pretty_past_tense: "Resolved",
+      assigned_role: "assignee",
+      enabled_states: ['resolved'],
+      assigned_states: ['open'],
+      new_state: "resolved",
+      privileges: ['write'],
+      edit_fields: ['resolution', 'fixed_in_version'],
+      callbacks: [ bug_tracker.CaptureResolutionCode ],
+    },
+    close: {
+      pretty_name: "Close",
+      pretty_past_tense: "Closed",
+      assigned_role: "submitter",
+      assigned_states: ['resolved'],
+      new_state: "closed",
+      privileges: ['write'],
+    },
+    reopen: {
+      pretty_name: "Reopen",
+      pretty_past_tense: "Reopened",
+      allowed_roles: ['submitter'],
+      enabled_states: ['resolved', 'closed'],
+      new_state: "open",
+      privileges: ['write'],
+    }
+  }, // actions
+}; // bug

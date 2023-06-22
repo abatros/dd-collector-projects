@@ -161,38 +161,38 @@ layers:
         color: rgba(0, 155, 155, 0.25)
   
 
-  - uid: poi
-    label: POI
-    button:
-      class: h2
-      label: PoI
-    visible: false
-    minZoom: 10
-    source: GeoJSON
-    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
-    params:
-      service: WFS
-      version: 2.0.0
-      request: GetFeature
-      typename: thgeom:LANDMARK_point
-      outputFormat: application/json
-      format_options: callback:loadFeatures
-      srsname: EPSG:32647
-      bbox: extent
-      exceptions: application/json
-    style:
-      stroke:
-        color: rgba(255, 0, 255, 1.0)
-        width: 1
-      fill:
-        color: rgba(200, 255, 200, 0.15)
-      circle:
-        radius: 5
-        fill:
-          color: rgba(255,20,255,0.5)
-        stroke:
-          color: rgba(255, 255, 0, 1.0)
-          width: 1
+#  - uid: poi
+#    label: POI
+#    button:
+#      class: h2
+#      label: PoI
+#    visible: false
+#    minZoom: 10
+#    source: GeoJSON
+#    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+#    params:
+#      service: WFS
+#      version: 2.0.0
+#      request: GetFeature
+#      typename: thgeom:LANDMARK_point
+#      outputFormat: application/json
+#      format_options: callback:loadFeatures
+#      srsname: EPSG:32647
+#      bbox: extent
+#      exceptions: application/json
+#    style:
+#      stroke:
+#        color: rgba(255, 0, 255, 1.0)
+#        width: 1
+#      fill:
+#        color: rgba(200, 255, 200, 0.15)
+#      circle:
+#        radius: 5
+#        fill:
+#          color: rgba(255,20,255,0.5)
+#        stroke:
+#          color: rgba(255, 255, 0, 1.0)
+#          width: 1
 
 
   - uid: v-layer

@@ -4,15 +4,15 @@
 - task - job same thing. "job" easier to write.
 - there is 1-1 relation between task and the WF process (also called wf-case, or wf-ticket)
 - workflow specification is done with YAML file.
-- workflow specs not same as wf-case : "workflow-in-action"
+- *workflow spec* not same as *wf-case* : "workflow-in-action"
 
 ### STATES
-- open : task exists in the system assigned to a team, waiting for surveyor to operate
-- assigned: a surveyor took the job (task) - noew we know who is in charge
-- visited: surveyor did visit the building, date is recorded
-- completed: surveyor commit a form with data, and declare "job done"
-- verified: data processing department ACK the data.
-- closed: project manager publish data.
+- **open** : task exists in the system assigned to a team, waiting for surveyor to operate
+- **assigned** : a surveyor took the job (task) - noew we know who is in charge
+- **visited** : surveyor did visit the building, date is recorded
+- **completed** : surveyor commit a form with data, and declare "job done"
+- **verified** : data processing department ACK the data.
+- **closed** : project manager publish data.
 
  ### ACTIONS: inline process
 

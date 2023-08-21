@@ -1,6 +1,6 @@
-uid: thgeom_dd-collector
-name: thgeon_dd-collector
-pretty_name: Landmarks & Buildings (2013)
+uid: dd-collector1
+name: dd-collector1
+pretty_name: dd-collector +permissions 
 comment: |
   button P5
 zoom: 5.95
@@ -108,7 +108,8 @@ layers:
     button:
       class: h2
       label: Bi
-    label: buildings-IMG
+    label: buildings-IMG    console.log('>>>>>>>>>>>>>>>>>> after-loading YAML permissions:', project.permissions)
+
     visible: false
     minZoom: 15
     gutter: 2
@@ -195,12 +196,11 @@ layers:
 #          width: 1
 
 
+#      permissions experimental    
+
   - uid: v-layer
-  
-#      experimental    
     permissions:
-      surveyors: write
-      
+      surveyors: write      
     button:
       class: h1
       label: V

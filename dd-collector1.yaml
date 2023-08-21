@@ -196,6 +196,8 @@ layers:
 
 
   - uid: v-layer
+    permissions:
+      surveyors: write
     button:
       class: h1
       label: V

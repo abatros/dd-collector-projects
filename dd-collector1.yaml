@@ -111,7 +111,7 @@ layers:
     label: flood-2019    #console.log('>>>>>>>>>>>>>>>>>> after-loading YAML permissions:', project.permissions)
 
     visible: false
-    minZoom: 10
+    minZoom: 7
     gutter: 2
     transition: 0
     #extent: 100.488739, 13.670610, 100.685554, 13.894135

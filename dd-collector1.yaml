@@ -110,7 +110,7 @@ layers:
       label: Fd
     label: flood-2019    #console.log('>>>>>>>>>>>>>>>>>> after-loading YAML permissions:', project.permissions)
 
-    visible: false
+    visible: true
     minZoom: 5
     gutter: 2
     transition: 0
@@ -235,7 +235,7 @@ layers:
       class: h2
       label: Tt
     label: v-layer-IMG
-    visible: true
+    visible: false
     minZoom: 4
     gutter: 2
     transition: 0

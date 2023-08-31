@@ -433,22 +433,22 @@ layers:
     #url: https://npvc.treasury.go.th/arcgis/rest/services/PRO/PRO_TDAS_PARCEL_PRICE/mapserver/tile/{z}/{x}/{y}.png
     #params: {}
 
-  - uid: index50k
-    label: index50k-tiled
+  - uid: LNC-data
+    label: LNC-data
     button:
       class: h3b
-      label: iM
+      label: LNC
     visible: false
     minZoom: 5
     #group: base-layers
-    url: http://portal.dol.go.th/geoserver/geonode/wms
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     source: TileWMS
     params:
       format: image/png
-      VERSION: 1.3.0
+      VERSION: 1.1.1
       tiled: true
       #request: GetFeature
       #srsname: EPSG:24047
       STYLES: ''
-      LAYERS: geonode:index50k_ind1975z47n
+      LAYERS: thgeom:oacs-geo-view-LNC
       exceptions: application/vnd.ogc.se_inimage

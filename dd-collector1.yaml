@@ -118,16 +118,16 @@ layers:
     #extent: 100.48873901367188, 13.670610427856445, 100.68555450439453, 13.894135475158691
     url: https://brainstem.abatros.com/gwc/service/wmts
     #url: https://brainstem.abatros.com/lekky/wms
-    #source: TileWMS
-    source: WMTS
+    source: TileWMS
+    #source: WMTS
     params:
-      #service: WMS
+      service: WMS
       format: image/png
-      #VERSION: 1.3.0
-      VERSION: 1.0.0
-      TILEMATRIX: 'EPSG:4326'
-      TILEMATRIXSET: ['EPSG:4326:0', 'EPSG:4326:1', 'EPSG:4326:2', 'EPSG:4326:3', 'EPSG:4326:4', 'EPSG:4326:5', 'EPSG:4326:6', 'EPSG:4326:7', 'EPSG:4326:8', 'EPSG:4326:9', 'EPSG:4326:10', 'EPSG:4326:11', 'EPSG:4326:12', 'EPSG:4326:13', 'EPSG:4326:14', 'EPSG:4326:15', 'EPSG:4326:16', 'EPSG:4326:17', 'EPSG:4326:18', 'EPSG:4326:19', 'EPSG:4326:20', 'EPSG:4326:21']
-      SERVICE: 'WMTS'
+      VERSION: 1.3.0
+      #VERSION: 1.0.0
+      #TILEMATRIX: 'EPSG:4326'
+      #TILEMATRIXSET: ['EPSG:4326:0', 'EPSG:4326:1', 'EPSG:4326:2', 'EPSG:4326:3', 'EPSG:4326:4', 'EPSG:4326:5', 'EPSG:4326:6', 'EPSG:4326:7', 'EPSG:4326:8', 'EPSG:4326:9', 'EPSG:4326:10', 'EPSG:4326:11', 'EPSG:4326:12', 'EPSG:4326:13', 'EPSG:4326:14', 'EPSG:4326:15', 'EPSG:4326:16', 'EPSG:4326:17', 'EPSG:4326:18', 'EPSG:4326:19', 'EPSG:4326:20', 'EPSG:4326:21']
+      #SERVICE: 'WMTS'
       tiled: true
       #request: GetFeature
       srsname: EPSG:4326

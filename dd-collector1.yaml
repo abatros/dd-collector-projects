@@ -61,35 +61,35 @@ layers:
     url: https://mt1.google.com/vt/lyrs=s@189&hl=en&&x={x}&y={y}&z={z}
     #url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
     
-  - uid: provinces-tiled
-    label: provinces-tiled
-    button:
-      class: h3b
-      label: PrV
-    visible: false
-    minZoom: 5
-    maxZoom: 10
+#  - uid: provinces-tiled
+#    label: provinces-tiled
+#    button:
+#      class: h3b
+#      label: PrV
+#    visible: false
+#    minZoom: 5
+#    maxZoom: 10
     #group: base-layers
-    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
-    source: TileWMS
-    params:
-      format: image/png
-      VERSION: 1.3.0
-      tiled: true
+#    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
+#    source: TileWMS
+#    params:
+#      format: image/png
+#      VERSION: 1.3.0
+#      tiled: true
       #request: GetFeature
       #STYLES: ''
-      STYLES: prov
+#      STYLES: prov
       #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/province.sld
-      SLD: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/province.sld
+#      SLD: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/province.sld
       #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/6ee9462f9e21cd6a01c9e46b49bf37a227355e2a/province.sld
-      LAYERS: thgeom:province
-      exceptions: application/vnd.ogc.se_inimage
+#      LAYERS: thgeom:province
+#      exceptions: application/vnd.ogc.se_inimage
 
-  - uid: amphoes-tiled
-    label: amphoes-tiled
+  - uid: admin_district-tms
+    label: admin_district-tms
     button:
       class: h3b
-      label: Abd
+      label: Adm
     visible: true
     minZoom: 10
     #group: base-layers

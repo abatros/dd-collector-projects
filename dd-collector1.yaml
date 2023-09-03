@@ -467,7 +467,7 @@ layers:
       class: h3b
       label: Lt
     visible: false
-    minZoom: 15
+    minZoom: 12
     #group: base-layers
     url: https://landsmaps.dol.go.th/geoserver/gwc/service/tms/1.0.0/LANDSMAPS_EXC_MEA%3AV_EXC_PARCEL47_MEA@EPSG%3A900913@png/{z}/{x}/{-y}.png
     source: XYZ

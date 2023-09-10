@@ -487,7 +487,7 @@ layers:
       service: WFS
       version: 2.0.0
       request: GetFeature
-      typename: LANDSMAPS:V_PARCEL47_LANDNO
+      typename: LANDSMAPS:V_PARCEL47
       outputFormat: application/json
       format_options: callback:loadFeatures
       srsname: EPSG:24047
@@ -495,7 +495,7 @@ layers:
       exceptions: application/json
     style:
       stroke:
-        color: rgba(50, 100, 100, 1.0)
+        color: rgba(150, 100, 100, 1.0)
         width: 0.5
       fill:
-        color: rgba(55, 155, 200, 0.2)
+        color: rgba(155, 155, 200, 0.2)

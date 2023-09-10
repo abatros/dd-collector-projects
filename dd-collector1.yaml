@@ -491,7 +491,7 @@ layers:
       typename: LANDSMAPS_EXC_MEA:V_EXC_PARCEL47_MEA
       outputFormat: application/json
       format_options: callback:loadFeatures
-      srsname: EPSG:24047
+      srsname: EPSG:4326
       bbox: extent
       exceptions: application/json
     style:

@@ -479,8 +479,8 @@ layers:
       class: h3b
       label: vLP
     visible: false
-    minZoom: 15
-    extent: 100.5, 13.5, 101.1, 13.8
+    minZoom: 12
+    #extent: 100.5, 13.5, 101.1, 13.8
     source: GeoJSON
     url: https://landsmaps.dol.go.th/geoserver/ows
     params:

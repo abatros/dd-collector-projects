@@ -479,7 +479,7 @@ layers:
       class: h3b
       label: vLP
     visible: false
-    minZoom: 12
+    minZoom: 16
     #extent: 100.5, 13.5, 101.1, 13.8
     source: GeoJSON
     url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS_EXC_MEA/ows
@@ -491,7 +491,7 @@ layers:
       typename: LANDSMAPS_EXC_MEA:V_EXC_PARCEL47_MEA
       outputFormat: application/json
       format_options: callback:loadFeatures
-      srsname: EPSG:3857
+      srsname: EPSG:4326
       bbox: extent
       exceptions: application/json
     style:

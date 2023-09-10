@@ -485,10 +485,10 @@ layers:
     url: https://landsmaps.dol.go.th/geoserver/ows
     params:
       service: WFS
-      version: 1.1.0
+      version: 2.0.0
       request: GetFeature
       #typename: LANDSMAPS:V_PARCEL47
-      typenamw: LANDSMAPS_EXC_MEA:V_EXC_PARCEL47_MEA
+      typename: LANDSMAPS_EXC_MEA:V_EXC_PARCEL47_MEA
       outputFormat: application/json
       format_options: callback:loadFeatures
       srsname: EPSG:24047

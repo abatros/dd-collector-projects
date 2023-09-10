@@ -480,14 +480,15 @@ layers:
       label: vLP
     visible: false
     minZoom: 15
-    #extent: 100.95, 13.05, 101.15, 13.25
+    extent: 100.5, 13.5, 101.1, 13.8
     source: GeoJSON
     url: https://landsmaps.dol.go.th/geoserver/ows
     params:
       service: WFS
       version: 2.0.0
       request: GetFeature
-      typename: LANDSMAPS:V_PARCEL47
+      #typename: LANDSMAPS:V_PARCEL47
+      typenamw: LANDSMAPS_EXC_MEA:V_EXC_PARCEL47_MEA
       outputFormat: application/json
       format_options: callback:loadFeatures
       srsname: EPSG:24047

@@ -472,3 +472,30 @@ layers:
     url: https://landsmaps.dol.go.th/geoserver/gwc/service/tms/1.0.0/LANDSMAPS_EXC_MEA%3AV_EXC_PARCEL47_MEA@EPSG%3A900913@png/{z}/{x}/{-y}.png
     source: XYZ
     gutter: 2
+
+  - uid: lp-wfs
+    label: lp-wfs
+    button:
+      class: h3b
+      label: vLP
+    visible: false
+    minZoom: 15
+    #extent: 100.95, 13.05, 101.15, 13.25
+    source: GeoJSON
+    url: https://landsmaps.dol.go.th/geoserver/ows
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: LANDSMAPS:V_PARCEL47_LANDNO
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:24047
+      bbox: extent
+      exceptions: application/json
+    style:
+      stroke:
+        color: rgba(50, 100, 100, 1.0)
+        width: 0.5
+      fill:
+        color: rgba(55, 155, 200, 0.2)

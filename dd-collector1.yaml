@@ -221,7 +221,7 @@ layers:
       service: WFS
       version: 2.0.0
       request: GetFeature
-      typename: thgeom:oacs-geo-view-dd-maps
+      typename: thgeom:oacs-geo-view-LNC
       outputFormat: application/json
       format_options: callback:loadFeatures
       #srsname: EPSG:4326
@@ -482,6 +482,7 @@ layers:
     minZoom: 16
     #extent: 100.5, 13.5, 101.1, 13.8
     source: GeoJSON
+    wrapX: false
     url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS_EXC_MEA/ows
     params:
       service: WFS

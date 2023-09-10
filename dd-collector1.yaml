@@ -482,7 +482,7 @@ layers:
     minZoom: 12
     #extent: 100.5, 13.5, 101.1, 13.8
     source: GeoJSON
-    url: https://landsmaps.dol.go.th/geoserver/ows
+    url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS_EXC_MEA/ows
     params:
       service: WFS
       version: 2.0.0

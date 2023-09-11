@@ -479,7 +479,7 @@ layers:
       class: h3b
       label: vLP
     visible: false
-    minZoom: 15
+    minZoom: 16
     #extent: 100.5, 13.5, 101.1, 13.8
     source: GeoJSON
     wrapX: false

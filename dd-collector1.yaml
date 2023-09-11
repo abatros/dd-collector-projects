@@ -96,6 +96,7 @@ layers:
     url: https://geoserver.thgeom-academy.com/geoserver/gwc/service/tms/1.0.0/thgeom%3Apv-ap@EPSG%3A900913@png/{z}/{x}/{-y}.png
     source: XYZ
     gutter: 2
+    attributions: 'Thailand Districts'
 #    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
 #    source: TileWMS
 #    params:
@@ -467,7 +468,7 @@ layers:
       class: h3b
       label: Lt
     visible: false
-    minZoom: 14
+    minZoom: 12
     #group: base-layers
     url: https://landsmaps.dol.go.th/geoserver/gwc/service/tms/1.0.0/LANDSMAPS_EXC_MEA%3AV_EXC_PARCEL47_MEA@EPSG%3A900913@png/{z}/{x}/{-y}.png
     source: XYZ

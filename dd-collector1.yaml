@@ -479,7 +479,7 @@ layers:
       class: h3b
       label: vLP
     visible: false
-    minZoom: 12
+    minZoom: 14
     #extent: 100.5, 13.5, 101.1, 13.8
     source: GeoJSON
     wrapX: false
@@ -497,7 +497,7 @@ layers:
       exceptions: application/json
     style:
       stroke:
-        color: rgba(150, 100, 100, 1.0)
+        color: rgba(190, 100, 100, 1.0)
         width: 0.5
       fill:
         color: rgba(155, 155, 200, 0.2)

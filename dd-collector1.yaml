@@ -484,13 +484,16 @@ layers:
     #extent: 100.5, 13.5, 101.1, 13.8
     source: GeoJSON
     wrapX: false
-    url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS_EXC_MEA/ows
+    #url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS_EXC_MEA/ows
+    url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows
     params:
       service: WFS
       version: 2.0.0
       request: GetFeature
+      viewparams: utmmap:51363,utmmap:51364,utmmap:50362,utmmap:50361,utmmap:51341,utmmap:52344
       #typename: LANDSMAPS:V_PARCEL47
-      typename: LANDSMAPS_EXC_MEA:V_EXC_PARCEL47_MEA
+      #typename: LANDSMAPS_EXC_MEA:V_EXC_PARCEL47_MEA
+      typename: V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO
       outputFormat: application/json
       format_options: callback:loadFeatures
       srsname: EPSG:4326

@@ -501,7 +501,7 @@ layers:
       exceptions: application/json
     style:
       stroke:
-        color: rgba(190, 100, 100, 1.0)
+        color: rgba(80, 190, 100, 1.0)
         width: 0.5
       fill:
-        color: rgba(155, 125, 100, 0.1)
+        color: rgba(105, 125, 100, 0.1)

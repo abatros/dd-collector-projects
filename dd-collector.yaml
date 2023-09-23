@@ -1,0 +1,508 @@
+uid: dd-collector
+name: dd-collector
+pretty_name: dd-collector for thgeom-academy students 
+comment: |
+  button P5
+zoom: 5.95
+xyIgnore: [718573.61, 1447971.app.actual.xnode39]
+#xyIgnore: [718573.61, 1517971.39]
+#lonlat: [100.6452, 13.7660]
+lonlat: [101.8, 12.9]
+xy_projection: EPSG:3857
+
+layers:
+  - uid: gmap-tiled
+    button:
+      label: G
+      class: h1
+    olayer_: gmap_tiled
+    label: GoogleMap
+    visible: false
+    group: base-layers
+    source: TileImage
+    attributions: 'Map data ©2019 Google'
+    url: https://mt1.google.com/vt/lyrs=m@113&hl=en&&x={x}&y={y}&z={z}
+
+  - uid: osm-tiled
+    button:
+      label: O
+      class: h1
+    olayer_: osm_tiled
+    label: OpenStreet
+    visible: true
+    group: base-layers
+    source: XYZ
+    gutter: 2
+    attributions: 'Maps © <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    url: https://{a-c}.tile.openstreetmap.org/{z}/{x}/{y}.png
+
+  - uid: arcgis-tiled
+    button:
+      label: A
+      class: h1
+    olayer_: arcgis_tiled
+    label: ArcGIS
+    visible: false
+    group: base-layers
+    source: XYZ
+    gutter: 2
+    attributions: 'Tiles © <a href="https://services.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer">ArcGIS</a>'
+    url: https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}
+    
+  - uid: GoogleSat
+    button:
+      label: Sat
+      class: h2
+    label: GoogleSat
+    visible: false
+    group: base-layers
+    source: TileImage
+    attributions: 'Satellite data ©2023 Google'    
+    url: https://mt1.google.com/vt/lyrs=s@189&hl=en&&x={x}&y={y}&z={z}
+    #url: https://www.google.cn/maps/vt?lyrs=s@189&gl=cn&x={x}&y={y}&z={z}
+    
+#  - uid: provinces-tiled
+#    label: provinces-tiled
+#    button:
+#      class: h3b
+#      label: PrV
+#    visible: false
+#    minZoom: 5
+#    maxZoom: 10
+    #group: base-layers
+#    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
+#    source: TileWMS
+#    params:
+#      format: image/png
+#      VERSION: 1.3.0
+#      tiled: true
+      #request: GetFeature
+      #STYLES: ''
+#      STYLES: prov
+      #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/province.sld
+#      SLD: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/province.sld
+      #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/6ee9462f9e21cd6a01c9e46b49bf37a227355e2a/province.sld
+#      LAYERS: thgeom:province
+#      exceptions: application/vnd.ogc.se_inimage
+
+  - uid: admin_district-tms
+    label: admin_district-tms
+    button:
+      class: h3b
+      label: Adm
+    visible: true
+    minZoom: 10
+    #group: base-layers
+    url: https://geoserver.thgeom-academy.com/geoserver/gwc/service/tms/1.0.0/thgeom%3Apv-ap@EPSG%3A900913@png/{z}/{x}/{-y}.png
+    source: XYZ
+    gutter: 2
+    attributions: 'Thailand Districts'
+#    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
+#    source: TileWMS
+#    params:
+#      format: image/png
+#      VERSION: 1.3.0
+#      tiled: true
+#      #request: GetFeature
+#      STYLES: ''
+#      LAYERS: thgeom:amphoe
+#      exceptions: application/vnd.ogc.se_inimage
+      
+  - uid: flood-2019
+    button:
+      class: h2
+      label: Fd
+    label: flood-2019    #console.log('>>>>>>>>>>>>>>>>>> after-loading YAML permissions:', project.permissions)
+
+    visible: true
+    minZoom: 5
+    gutter: 2
+    transition: 0
+    #extent: 100.488739, 13.670610, 100.685554, 13.894135
+    #extent: 100.48873901367188, 13.670610427856445, 100.68555450439453, 13.894135475158691
+    #url: https://brainstem.abatros.com/gwc/service/wmts
+    url: https://brainstem.abatros.com/lekky/wms
+    source: TileWMS
+    #source: WMTS
+    params:
+      service: WMS
+      format: image/png
+      VERSION: 1.3.0
+      #VERSION: 1.0.0
+      #TILEMATRIX: 'EPSG:4326'
+      #TILEMATRIXSET: ['EPSG:4326:0', 'EPSG:4326:1', 'EPSG:4326:2', 'EPSG:4326:3', 'EPSG:4326:4', 'EPSG:4326:5', 'EPSG:4326:6', 'EPSG:4326:7', 'EPSG:4326:8', 'EPSG:4326:9', 'EPSG:4326:10', 'EPSG:4326:11', 'EPSG:4326:12', 'EPSG:4326:13', 'EPSG:4326:14', 'EPSG:4326:15', 'EPSG:4326:16', 'EPSG:4326:17', 'EPSG:4326:18', 'EPSG:4326:19', 'EPSG:4326:20', 'EPSG:4326:21']
+      #SERVICE: 'WMTS'
+      tiled: true
+      #request: GetFeature
+      srsname: EPSG:4326
+      STYLES: ''
+      WIDTH: 128
+      HEIGHT: 128
+      LAYERS: lekky:2019-flood-utf
+      exceptions: application/vnd.ogc.se_inimage
+     
+  - uid: buildings
+    label: Buildings
+    button:
+      class: h3b
+      label: Bv
+    visible: true
+    minZoom: 18
+    extent: 100.488739, 13.670610, 100.685554, 13.894135
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:BLDG_new_region
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      #srsname: EPSG:4326
+      bbox: extent
+      #maxFeatures: 1000
+      #count: 2000
+      exceptions: application/json
+    style:
+      stroke:
+        color: rgba(0, 150, 255, 1.0)
+        width: 0.45
+      fill:
+        color: rgba(0, 155, 155, 0.25)
+  
+
+#  - uid: poi
+#    label: POI
+#    button:
+#      class: h2
+#      label: PoI
+#    visible: false
+#    minZoom: 10
+#    source: GeoJSON
+#    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+#    params:
+#      service: WFS
+#      version: 2.0.0
+#      request: GetFeature
+#      typename: thgeom:LANDMARK_point
+#      outputFormat: application/json
+#      format_options: callback:loadFeatures
+#      srsname: EPSG:32647
+#      bbox: extent
+#      exceptions: application/json
+#    style:
+#      stroke:
+#        color: rgba(255, 0, 255, 1.0)
+#        width: 1
+#      fill:
+#        color: rgba(200, 255, 200, 0.15)
+#      circle:
+#        radius: 5
+#        fill:
+#          color: rgba(255,20,255,0.5)
+#        stroke:
+#          color: rgba(255, 255, 0, 1.0)
+#          width: 1
+
+
+#      permissions experimental    
+
+  - uid: v-layer
+    permissions:
+      surveyors: write      
+    button:
+      class: h1
+      label: V
+    label: V-layer
+    visible: false
+    source: GeoJSON
+    wrapX: false
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:oacs-geo-view-LNC
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      #srsname: EPSG:4326
+      bbox: extent
+      exceptions: application/json
+    style:
+      stroke:
+        color: rgba(200, 0, 200, 0.5)
+        width: 2
+      fill:
+        color: rgba(240, 240, 255, 0.6)
+      circle:
+        radius: 7
+        fill:
+          color: rgba(255,20,100,0.5)
+
+  - uid: v-layer-IMG
+    button:
+      class: h2
+      label: Tt
+    label: v-layer-IMG
+    visible: false
+    minZoom: 4
+    gutter: 2
+    transition: 0
+    #extent: 100.488739, 13.670610, 100.685554, 13.894135
+    #extent: 100.48873901367188, 13.670610427856445, 100.68555450439453, 13.894135475158691
+    #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+    #url: https://maps-cartes.services.geo.ca:443/server_serveur/services/NRCan/uav_survey_cambridge_bay_nunavut_fr/MapServer/WmsServer
+    source: TileWMS
+    #source: ImageWMS
+    params:
+      service: WMS
+      format: image/png
+      VERSION: 1.1.1
+      tiled: true
+      #request: GetFeature
+      #srsname: EPSG:4326
+      STYLES: ''
+      WIDTH: 128
+      HEIGHT: 128
+      LAYERS: thgeom:oacs-geo-view-dd-maps
+      #LAYERS: 0
+      exceptions: application/vnd.ogc.se_inimage
+
+#  - uid: vis-lands
+#    label: Lands
+#    button:
+#      class: h3b
+#      label: LP
+#    visible: false
+#    minZoom: 12
+#    extent: 100.95, 13.05, 101.15, 13.25
+#    source: GeoJSON
+#    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+#    params:
+#      service: WFS
+#      version: 2.0.0
+#      request: GetFeature
+#      typename: thgeom:vis-data-land
+#      outputFormat: application/json
+#      format_options: callback:loadFeatures
+#      srsname: EPSG:32647
+#      bbox: extent
+#      exceptions: application/json
+#    style:
+#      stroke:
+#        color: rgba(255, 64, 0, 1.0)
+#        width: 0.85
+#      fill:
+#        color: rgba(200, 255, 200, 0.15)
+#      circle:
+#        radius: 7
+#        fill:
+#          color: rgba(255,20,255,0.5)
+#        stroke:
+#          color: rgba(255, 255, 0, 1.0)
+#          width: 1
+
+  - uid: vis-buildings
+    label: vis-Buildings
+    button:
+      class: h3b
+      label: viB
+    visible: false
+    minZoom: 16
+    extent: 100.95, 13.05, 101.15, 13.25
+    source: GeoJSON
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      typename: thgeom:vis-data-bldg
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:32647
+      bbox: extent
+      exceptions: application/json
+    style:
+      stroke:
+        color: rgba(50, 100, 100, 1.0)
+        width: 0.5
+      fill:
+        color: rgba(55, 155, 200, 0.2)
+
+  - uid: dlands-North-South
+    button:
+      label: DL
+      class: h3b
+    olayer_: dlns
+    label: D_Lands-NS
+    visible: false
+    minZoom: 15  
+    #url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows
+    url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows
+    source: TileWMS
+    crossOrigin: anonymous
+    params:
+      service: WMS
+      format: image/png
+      VERSION: 1.3.0
+      #viewparams: utmmap:49481
+      viewparams: utmmap:49481,utmmap:49492,utmmap:50484,utmmap:50493,utmmap:50403,utmmap:50404,utmmap:48463,utmmap:48464,utmmap:47462,utmmap:47461,utmmap:50221,utmmap:51224,utmmap:51233,utmmap:50232,utmmap:46241,utmmap:46252,utmmap:56384,utmmap:56393,utmmap:55411,utmmap:55422,utmmap:48272,utmmap:49273,utmmap:49272,utmmap:59391,utmmap:59392,utmmap:54384,utmmap:54393,utmmap:55431,utmmap:55434,utmmap:52221,utmmap:52222,utmmap:52223,utmmap:52224,utmmap:45471,utmmap:50421,utmmap:50424,utmmap:55333,utmmap:55334,utmmap:55441,utmmap:55444,utmmap:49251,utmmap:50254
+      #//Chiangrai[49481,49492,50484,50493]
+      #//Nakonsawan[50403,50404]
+      #//Chiangmai[48463,48464,47462,47461]
+      #//Songkhla[50221,51224,51233,50232]
+      #//Phuket[46241,46252]
+      #//Buriram[56384,56393]
+      #//Khonkaen[55411,55422]
+      #//Suratthani[48272,49273,49272]
+      #//Ubonratchathani[59391,59392]
+      #//Nakonratchasima[54384,54393]
+      #//Udornthani[55431,55434]
+      #//Yala[52221,52222,52223,52224]
+      #//Maehongsorn[45471]
+      #//Phitsanulok[50421,50424]
+      #//Trad[55333,55334]
+      #//Nongkhai[55441,55444]
+      #//Nokonsrithammarat[49251,50254]
+      #//----
+      tiled: true
+      #request: GetFeature
+      #srsname: EPSG:24047
+      STYLES: ''
+      #STYLES: vpar
+      #SLD: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/vpar31.sld
+      #SLD: https://raw.githubusercontent.com/abatros/dd-collector-projects/master/vpar_style.sld
+      #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/vpar.sld
+      #LAYERS: LANDSMAPS:V_PARCEL47
+      LAYERS: V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47,V_PARCEL47,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47,V_PARCEL47,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL48,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO
+      exceptions: application/vnd.ogc.se_inimage
+
+  - uid: dlands-Bangkok-Middle
+    button:
+      label: DLB
+      class: h3b
+    olayer_: dlb
+    label: D_Lands-B
+    visible: true
+    minZoom: 15  
+    #url: http://172.16.43.122:8081/geoserver/LANDSMAPS/ows
+    url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows
+    source: TileWMS
+    crossOrigin: anonymous
+    params:
+      service: WMS
+      format: image/png
+      VERSION: 1.3.0
+      #viewparams: [utmmap:51363, utmmap:51364]
+      #viewparams: utmmap:51363      
+      viewparams: utmmap:51363,utmmap:51364,utmmap:50362,utmmap:50361,utmmap:51341,utmmap:52344,utmmap:52353,utmmap:52354,utmmap:51351,utmmap:51352,utmmap:48372,utmmap:49373,utmmap:49364,utmmap:48361,utmmap:52373,utmmap:52372,utmmap:52341,utmmap:52342,utmmap:52343,utmmap52344,utmmap:51373,utmmap:51374,utmmap:51361,utmmap:51362,utmmap:52363,utmmap:52364,utmmap:49361,utmmap:49362,utmmap:50363,utmmap:50364,utmmap:49351,utmmap:49352,utmmap:50353,utmmap:50354,utmmap:50371,utmmap:50374,utmmap:50382,utmmap:50383
+      #//Bangkok[51363,51364,50362,50361]
+      #//Pattaya[51341,52344]
+      #//Chonburi[52353,52354,51351,51352]
+      #//Kanchanaburi[48372,49373,49364,48361]
+      #//Nakonnayok[52373,52372]
+      #//Rayong[52341,52342,52343,52344]
+      #//Ayuthaya[51373,51374]
+      #//Chachoengsao[51361,51362,52363,52364]
+      #//Nakonpathom[49361,49362,50363,50364]
+      #//Phetchaburi[49351,49352,50353,50354]
+      #//Suphanburi[50371,50374,50382,50383]
+      #//----
+      #viewparams: utmmap:51363,51364,51362
+      #viewparams: 'utmmap:51363\,51364\,51362'
+      #viewparams: utmmap:51363;51364
+      #viewparams: utmmap:51364
+      tiled: true
+      #request: GetFeature
+      #srsname: EPSG:24047
+      STYLES: ''
+      #STYLES: vpar
+      #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/master/vpar31.sld
+      #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/fade61dee826d85030fd1c324d266a77f822852c/vpar3.sld
+      #SLD: https://cdn.rawgit.com/abatros/dd-collector-projects/67505666904c2f435f6ee0c93822fe5b89edc88f/vpar.sld
+      #LAYERS: V_PARCEL47_LANDNO
+      LAYERS: V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO
+      #//viewparams & LAYERS have to be matched one by one
+      exceptions: application/vnd.ogc.se_inimage
+
+#  - uid: tdlands
+#    button:
+#      label: TDL
+#      class: h3b
+#    olayer_: tdl
+#    label: TD_Lands
+#    visible: true
+    #source: TileArcGISRest
+#    source: TileImage
+    #source: XYZ
+    #ratio: 1
+#    url: https://npvc.treasury.go.th/NPVC/proxy/proxy.ashx?https://npvc.treasury.go.th/arcgis/rest/services/PRO/PRO_TDAS_PARCEL_PRICE/mapserver
+    #url: https://npvc.treasury.go.th/NPVC/proxy/proxy.ashx?https://npvc.treasury.go.th/arcgis/rest/services/PRO/PRO_TDAS_PARCEL_PRICE/mapserver/tile/{z}/{x}/{y}.png
+    #url: https://npvc.treasury.go.th/arcgis/rest/services/PRO/PRO_TDAS_PARCEL_PRICE/mapserver/tile/{z}/{x}/{y}.png
+    #params: {}
+
+  - uid: LNC-data
+    label: LNC-data
+    button:
+      class: h3b
+      label: LNC
+    visible: true
+    minZoom: 5
+    #group: base-layers
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+    source: TileWMS
+    params:
+      format: image/png
+      VERSION: 1.1.1
+      tiled: true
+      #request: GetFeature
+      #srsname: EPSG:24047
+      STYLES: ''
+      LAYERS: thgeom:oacs-geo-view-LNC
+      exceptions: application/vnd.ogc.se_inimage
+
+  - uid: land_parcel-tms
+    label: land_parcel-tms
+    button:
+      class: h3b
+      label: Lt
+    visible: false
+    minZoom: 12
+    #group: base-layers
+    url: https://landsmaps.dol.go.th/geoserver/gwc/service/tms/1.0.0/LANDSMAPS_EXC_MEA%3AV_EXC_PARCEL47_MEA@EPSG%3A900913@png/{z}/{x}/{-y}.png
+    source: XYZ
+    gutter: 2
+
+  - uid: lp-wfs
+    label: lp-wfs
+    button:
+      class: h3b
+      label: vLP
+    visible: false
+    minZoom: 14
+    #extent: 100.5, 13.5, 101.1, 13.8
+    source: GeoJSON
+    wrapX: false
+    #url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS_EXC_MEA/ows
+    url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      viewparams: utmmap:51363,utmmap:51364,utmmap:50362,utmmap:50361,utmmap:51341,utmmap:52344,utmmap:50484,utmmap:50493
+      #typename: LANDSMAPS:V_PARCEL47
+      #typename: LANDSMAPS_EXC_MEA:V_EXC_PARCEL47_MEA
+      typename: V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO
+      #Bangkok, Pattaya, Chiangrai[Chiangrung]
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:4326
+      bbox: extent
+      exceptions: application/json
+    style:
+      stroke:
+        color: rgba(80, 190, 100, 1.0)
+        width: 0.5
+      fill:
+        color: rgba(105, 125, 100, 0.1)

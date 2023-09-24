@@ -142,7 +142,7 @@ layers:
     #extent: 100.48873901367188, 13.670610427856445, 100.68555450439453, 13.894135475158691
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     url: https://geoserver.thgeom-academy.com/geoserver/gwc/demo/thgeom:BLDG_new_region
-    #source: TileWMS
+    source: TileWMS
     params:
       #service: WMS
       service: WMTS

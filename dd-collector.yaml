@@ -145,11 +145,11 @@ layers:
     #source: TileWMS
     params:
       #service: WMS
-      service: GWC
+      service: WMTS
       gridSet: EPSG:4326
       format: image/png
-      VERSION: 1.3.0
-      tiled: true
+      VERSION: 1.0.0
+      #tiled: true
       #request: GetFeature
       srsname: EPSG:4326
       STYLES: ''

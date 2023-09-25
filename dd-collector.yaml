@@ -123,7 +123,7 @@ layers:
       gridSet: EPSG:4326
       tiled: true
       #request: GetTile
-      #srsname: EPSG:4326
+      srsname: EPSG:4326
       STYLES: ''
       WIDTH: 128
       HEIGHT: 128

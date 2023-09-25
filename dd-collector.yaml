@@ -119,15 +119,15 @@ layers:
       VERSION: 1.0.0
       #TILEMATRIX: 'EPSG:4326'
       #TILEMATRIXSET: ['EPSG:4326:0', 'EPSG:4326:1', 'EPSG:4326:2', 'EPSG:4326:3', 'EPSG:4326:4', 'EPSG:4326:5', 'EPSG:4326:6', 'EPSG:4326:7', 'EPSG:4326:8', 'EPSG:4326:9', 'EPSG:4326:10', 'EPSG:4326:11', 'EPSG:4326:12', 'EPSG:4326:13', 'EPSG:4326:14', 'EPSG:4326:15', 'EPSG:4326:16', 'EPSG:4326:17', 'EPSG:4326:18', 'EPSG:4326:19', 'EPSG:4326:20', 'EPSG:4326:21']
-      SERVICE: 'WMTS'
-      tilematrixet: EPSG:4326
+      SERVICE: WMTS
+      gridSet: EPSG:4326
       tiled: true
       request: GetTile
       #srsname: EPSG:4326
       STYLES: ''
       WIDTH: 128
       HEIGHT: 128
-      LAYER: lekky:2019-flood-utf
+      LAYERS: lekky:2019-flood-utf
       exceptions: application/vnd.ogc.se_inimage
 
   - uid: buildings-IMG

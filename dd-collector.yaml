@@ -122,7 +122,7 @@ layers:
       SERVICE: WMTS
       gridSet: EPSG:4326
       tiled: true
-      request: GetTile
+      #request: GetTile
       #srsname: EPSG:4326
       STYLES: ''
       WIDTH: 128

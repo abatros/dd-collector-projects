@@ -232,11 +232,11 @@ layers:
 
 
 # To be modified for THGeom Academy students
-  - uid: LNC-data
-    label: LNC-data
+  - uid: TGS-data
+    label: TGS[THGeom Academy Students]-data
     button:
       class: h3b
-      label: LNC
+      label: TGS
     visible: true
     minZoom: 5
     #group: base-layers
@@ -257,7 +257,7 @@ layers:
     label: land_parcel-tms
     button:
       class: h3b
-      label: Lt
+      label: LPt
     visible: false
     minZoom: 12
     #group: base-layers

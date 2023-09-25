@@ -127,7 +127,7 @@ layers:
       STYLES: ''
       WIDTH: 128
       HEIGHT: 128
-      LAYERS: lekky:2019-flood-utf
+      LAYER: lekky:2019-flood-utf
       exceptions: application/vnd.ogc.se_inimage
 
   - uid: buildings-IMG

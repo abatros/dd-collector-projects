@@ -213,7 +213,7 @@ layers:
       service: WFS
       version: 2.0.0
       request: GetFeature
-      typename: thgeom:oacs-geo-view-LNC
+      typename: thgeom:oacs-geo-view-TGS
       outputFormat: application/json
       format_options: callback:loadFeatures
       #srsname: EPSG:4326

@@ -249,7 +249,7 @@ layers:
       #request: GetFeature
       #srsname: EPSG:24047
       STYLES: ''
-      LAYERS: thgeom:oacs-geo-view-LNC
+      LAYERS: thgeom:oacs-geo-view-TGS
       exceptions: application/vnd.ogc.se_inimage
 
 # Land parcels in TMS format

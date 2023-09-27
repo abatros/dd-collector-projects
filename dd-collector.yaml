@@ -240,7 +240,8 @@ layers:
     visible: true
     minZoom: 5
     #group: base-layers
-    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+    #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+    url: http://thgeom-academy.com:8090/geoserver/thgeom/wms
     source: TileWMS
     params:
       format: image/png

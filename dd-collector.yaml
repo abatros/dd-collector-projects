@@ -241,12 +241,12 @@ layers:
     visible: true
     minZoom: 5
     #group: base-layers
-    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     #url: http://thgeom-academy.com:8090/geoserver/thgeom/wms
     source: TileWMS
     params:
       format: image/png
-      VERSION: 1.1.1
+      VERSION: 1.1.0
       tiled: true
       #request: GetFeature
       #srsname: EPSG:24047

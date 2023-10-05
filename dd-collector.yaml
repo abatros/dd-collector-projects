@@ -81,7 +81,7 @@ layers:
     visible: true
     minZoom: 10
     #group: base-layers
-    url: https://geoserver.thgeom-academy.com/geoserver/gwc/service/tms/1.0.0/thgeom%3Apv-ap@EPSG%3A900913@png/{z}/{x}/{-y}.png
+    url: https://geoserver.thgeom-academy.com/geoserver/gwc/service/tms/1.0.0/thgeom%3Apv-ap-tb@EPSG%3A900913@png/{z}/{x}/{-y}.png
     #url: http://thgeom-academy.com:8090/geoserver/gwc/service/tms/1.0.0/thgeom%3Apv-ap@EPSG%3A900913@png/{z}/{x}/{-y}.png
     source: XYZ
     gutter: 2

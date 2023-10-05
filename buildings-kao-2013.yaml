@@ -91,7 +91,7 @@ layers:
       class: h3b
       label: AP
     visible: true
-    minZoom: 10
+    minZoom: 8
     #group: base-layers
     url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
     source: TileWMS
@@ -102,6 +102,25 @@ layers:
       #request: GetFeature
       STYLES: ''
       LAYERS: thgeom:amphoe
+      exceptions: application/vnd.ogc.se_inimage
+      
+  - uid: tambons-tiled
+    label: tambons-tiled
+    button:
+      class: h3b
+      label: TB
+    visible: true
+    minZoom: 10
+    #group: base-layers
+    url: https://geoserver.thgeom-academy.com/geoserver/thgeom/wms
+    source: TileWMS
+    params:
+      format: image/png
+      VERSION: 1.3.0
+      tiled: true
+      #request: GetFeature
+      STYLES: ''
+      LAYERS: thgeom:tambon
       exceptions: application/vnd.ogc.se_inimage
       
   - uid: buildings-IMG

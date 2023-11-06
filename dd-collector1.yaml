@@ -516,7 +516,7 @@ layers:
     minZoom: 5
     #group: base-layers
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
-    url: https://mapdb.pte.co.th/geoserver/Ebook/wms
+    url: https://mapdb.pte.co.th/geoserver/wms
     source: TileWMS
     params:
       format: image/png
@@ -525,5 +525,5 @@ layers:
       #request: GetFeature
       #srsname: EPSG:24047
       STYLES: ''
-      LAYERS: Ebook:road_ah,Ebook:road_doh,Ebook:road_drr_2020,Ebook:road_other
+      LAYERS: Ebook:road_ah,Ebook:road_doh,Ebook:road_drr_2020,Ebook:road_other,ProtoPj:new_drr
       exceptions: application/vnd.ogc.se_inimage

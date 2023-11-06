@@ -525,5 +525,5 @@ layers:
       #request: GetFeature
       #srsname: EPSG:24047
       STYLES: ''
-      LAYERS: Ebook:road_doh
+      LAYERS: Ebook:road_ah,Ebook:road_doh,Ebook:road_drr_2020,Ebook:road_other
       exceptions: application/vnd.ogc.se_inimage

@@ -506,3 +506,24 @@ layers:
         width: 0.5
       fill:
         color: rgba(105, 125, 100, 0.1)
+
+  - uid: PTE-data
+    label: PTE-data
+    button:
+      class: h3b
+      label: PTE
+    visible: true
+    minZoom: 5
+    #group: base-layers
+    #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
+    url: https://mapdb.pte.co.th/geoserver/Ebook/wms
+    source: TileWMS
+    params:
+      format: image/png
+      VERSION: 1.1.1
+      tiled: true
+      #request: GetFeature
+      #srsname: EPSG:24047
+      STYLES: ''
+      LAYERS: Ebook:road_doh
+      exceptions: application/vnd.ogc.se_inimage

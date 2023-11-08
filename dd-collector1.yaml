@@ -513,7 +513,7 @@ layers:
       class: h3b
       label: PTE
     visible: true
-    minZoom: 5
+    minZoom: 12
     #group: base-layers
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     url: https://mapdb.pte.co.th/geoserver/wms
@@ -525,5 +525,5 @@ layers:
       #request: GetFeature
       #srsname: EPSG:24047
       STYLES: ''
-      LAYERS: Ebook:river,Ebook:railway,Ebook:road_expressway,Ebook:road_motorway,Ebook:road_ah,Ebook:road_ah_label,Ebook:road_doh,Ebook:road_doh_label,Ebook:road_drr_2020,Ebook:road_drr_2020_label,Ebook:road_other,ProtoPj:mp,Bh:view_mat,Drawing:gis_mat_pte_1537,Ebook:point_village,Ebook:poi,Ebook:poi_ident,Ebook:travel_point,Ebook:travel_point_ident
+      LAYERS: Ebook:river,Ebook:railway,Ebook:road_expressway,Ebook:road_motorway,Ebook:road_ah,Ebook:road_ah_label,Ebook:road_doh,Ebook:road_doh_label,Ebook:road_drr_2020,Ebook:road_drr_2020_label,Ebook:road_other,ProtoPj:mp,Bh:view_mat,Drawing:gis_mat_pte_1537,Ebook:point_village,Ebook:poi,Ebook:travel_point
       exceptions: application/vnd.ogc.se_inimage

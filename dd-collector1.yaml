@@ -513,7 +513,7 @@ layers:
       class: h3b
       label: PTE
     visible: true
-    minZoom: 12
+    minZoom: 9
     #group: base-layers
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     url: https://mapdb.pte.co.th/geoserver/wms

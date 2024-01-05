@@ -577,6 +577,6 @@ layers:
       STYLES: ''
       WIDTH: 128
       HEIGHT: 128
-      LAYERS: thgeom:kamalasai_lands
+      LAYERS: thgeom:kamalasai_lands_n
       #LAYERS: 0
       exceptions: application/vnd.ogc.se_inimage

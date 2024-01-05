@@ -513,7 +513,7 @@ layers:
     button:
       class: h3b
       label: PTE
-    visible: true
+    visible: false
     minZoom: 9
     #group: base-layers
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows

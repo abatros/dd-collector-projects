@@ -533,13 +533,13 @@ layers:
     label: ldd-landuse
     button:
       class: h3b
-      label: Lu
+      label: LU
     visible: true
     minZoom: 10
     #group: base-layers
     url: https://dev.simul-carta.com/rest/tiles/669a84bbdc68733f3826b467/{z}/{x}/{y}.pbf
-    source: Vector
-    gutter: 2
+    source: VectorTile
+    #gutter: 2
     attributions: 'LDD landuse'
 
   - uid: GISTDA_Cassava

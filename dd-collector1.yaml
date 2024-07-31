@@ -534,8 +534,9 @@ layers:
     button:
       class: h3b
       label: LU
+    olayer_: ldd_tiled
     visible: true
-    minZoom: 10
+    #minZoom: 10
     #group: base-layers
     url: https://dev.simul-carta.com/rest/tiles/669a84bbdc68733f3826b467/{z}/{x}/{y}.pbf
     source: VectorTile

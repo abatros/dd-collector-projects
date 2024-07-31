@@ -538,7 +538,7 @@ layers:
     minZoom: 10
     #group: base-layers
     url: https://dev.simul-carta.com/rest/tiles/669a84bbdc68733f3826b467/{z}/{x}/{y}.pbf
-    source: VectorTile
+    source: Vector
     #gutter: 2
     attributions: 'LDD landuse'
 

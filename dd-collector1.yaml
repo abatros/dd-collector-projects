@@ -508,26 +508,26 @@ layers:
  #     fill:
  #       color: rgba(105, 125, 100, 0.1)
 
-#  - uid: PTE-data
-#    label: PTE-data
-#    button:
-#      class: h3b
-#      label: PTE
-#    visible: false
-#    minZoom: 9
+ #  - uid: PTE-data
+ #    label: PTE-data
+ #    button:
+ #      class: h3b
+ #      label: PTE
+ #    visible: false
+ #    minZoom: 9
     #group: base-layers
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
-#    url: https://mapdb.pte.co.th/geoserver/wms
-#    source: TileWMS
-#    params:
-#      format: image/png
-#      VERSION: 1.1.1
-#      tiled: true
+ #    url: https://mapdb.pte.co.th/geoserver/wms
+ #    source: TileWMS
+ #    params:
+ #      format: image/png
+ #      VERSION: 1.1.1
+ #      tiled: true
       #request: GetFeature
       #srsname: EPSG:24047
-#      STYLES: ''
-#      LAYERS: GisDrawing:doh_hierarchy_link1,Ebook:river,Ebook:railway,Ebook:road_expressway,Ebook:road_motorway,Ebook:road_ah,Ebook:road_ah_label,Ebook:road_doh,Ebook:road_doh_label,Ebook:road_drr_2020,Ebook:road_drr_2020_label,Ebook:road_other,ProtoPj:mp,Bh:view_mat,Drawing:gis_mat_pte_1537,Ebook:point_village,Ebook:poi,Ebook:travel_point,Drawing:gis_river
-#      exceptions: application/vnd.ogc.se_inimage
+ #      STYLES: ''
+ #      LAYERS: GisDrawing:doh_hierarchy_link1,Ebook:river,Ebook:railway,Ebook:road_expressway,Ebook:road_motorway,Ebook:road_ah,Ebook:road_ah_label,Ebook:road_doh,Ebook:road_doh_label,Ebook:road_drr_2020,Ebook:road_drr_2020_label,Ebook:road_other,ProtoPj:mp,Bh:view_mat,Drawing:gis_mat_pte_1537,Ebook:point_village,Ebook:poi,Ebook:travel_point,Drawing:gis_river
+ #      exceptions: application/vnd.ogc.se_inimage
 
 #  - uid: ldd-landuse
 #    label: ldd-landuse

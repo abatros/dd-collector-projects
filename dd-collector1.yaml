@@ -540,6 +540,8 @@ layers:
     #group: base-layers
     url: https://dev.simul-carta.com/rest/tiles/669a84bbdc68733f3826b467/{z}/{x}/{y}.pbf
     source: VectorTileSource
+    params:
+      format: MVT
     #gutter: 2
     attributions: 'LDD landuse'
     

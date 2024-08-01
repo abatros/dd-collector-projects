@@ -531,18 +531,18 @@ layers:
  #      exceptions: application/vnd.ogc.se_inimage
 
   - uid: ldd_landuse
+    label: ldd_landuse
     button:
       label: LU
-      class: h3b
+      class: h3
     #olayer_: ldd_tiled
-    label: ldd_landuse
     visible: true
     #group: base-layers
     source: XYZ
     gutter: 2
-    attributions: 'LDD landuse'
-    #url: https://dev.simul-carta.com/rest/tiles/669a84bbdc68733f3826b467/{z}/{x}/{y}.pbf
-    url: https://{a-d}.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/{z}/{x}/{y}.vector.pbf
+    attributions: 'LDD Landuse Map'
+    url: https://dev.simul-carta.com/rest/tiles/669a84bbdc68733f3826b467/{z}/{x}/{y}.pbf
+    #url: https://{a-d}.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/{z}/{x}/{y}.vector.pbf
 
   - uid: GISTDA_Cassava
     label: GISTDA_Cassava

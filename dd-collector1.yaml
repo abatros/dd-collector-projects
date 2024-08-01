@@ -529,23 +529,23 @@ layers:
  #      LAYERS: GisDrawing:doh_hierarchy_link1,Ebook:river,Ebook:railway,Ebook:road_expressway,Ebook:road_motorway,Ebook:road_ah,Ebook:road_ah_label,Ebook:road_doh,Ebook:road_doh_label,Ebook:road_drr_2020,Ebook:road_drr_2020_label,Ebook:road_other,ProtoPj:mp,Bh:view_mat,Drawing:gis_mat_pte_1537,Ebook:point_village,Ebook:poi,Ebook:travel_point,Drawing:gis_river
  #      exceptions: application/vnd.ogc.se_inimage
 
-  - uid: ldd_landuse
-    label: ldd_landuse
-    button:
-      class: h3b
-      label: LU
+ # - uid: ldd_landuse
+ #   label: ldd_landuse
+ #   button:
+ #     class: h3b
+ #     label: LU
     #olayer_: ldd_tiled
-    visible: true
+ #   visible: true
     #minZoom: 10
     #group: base-layers
-    source: VectorTile
+ #   source: VectorTile
  #   url: https://dev.simul-carta.com/rest/tiles/669a84bbdc68733f3826b467/{z}/{x}/{y}.pbf
-     url: https://{a-d}.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/{z}/{x}/{y}.vector.pbf
-    params:
-      format: MVT
-      tiled: true
+ #    url: https://{a-d}.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/{z}/{x}/{y}.vector.pbf
+ #   params:
+ #     format: MVT
+ #     tiled: true
     #gutter: 2
-    attributions: 'LDD landuse'
+ #   attributions: 'LDD landuse'
 
   - uid: GISTDA_Cassava
     label: GISTDA_Cassava

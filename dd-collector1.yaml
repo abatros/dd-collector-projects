@@ -534,15 +534,15 @@ layers:
     button:
       label: LU
       class: h3b
-    #olayer_: osm_tiled
+    #olayer_: ldd_tiled
     label: ldd_landuse
     visible: true
     #group: base-layers
     source: XYZ
     gutter: 2
     attributions: 'LDD landuse'
-    url: https://dev.simul-carta.com/rest/tiles/669a84bbdc68733f3826b467/{z}/{x}/{y}.pbf
-    #url: https://{a-d}.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/{z}/{x}/{y}.vector.pbf
+    #url: https://dev.simul-carta.com/rest/tiles/669a84bbdc68733f3826b467/{z}/{x}/{y}.pbf
+    url: https://{a-d}.tiles.mapbox.com/v4/mapbox.mapbox-streets-v6/{z}/{x}/{y}.vector.pbf
 
   - uid: GISTDA_Cassava
     label: GISTDA_Cassava

@@ -538,8 +538,8 @@ layers:
     #olayer_: ldd_tiled
     visible: true
     #group: base-layers
-    #source: VectorTile
-    source: XYZ
+    source: VectorTile
+    #source: XYZ
     gutter: 2
     attributions: 'LDD Landuse Map'
     url: https://simul-carta.com/rest/tiles/669a84bbdc68733f3826b467/{z}/{x}/{y}.pbf

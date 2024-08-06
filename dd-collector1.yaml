@@ -572,7 +572,7 @@ layers:
     button:
       class: h3b
       label: R16
-    visible: flase
+    visible: false
     minZoom: 9
     #group: base-layers
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
@@ -594,7 +594,7 @@ layers:
     button:
       class: h3b
       label: S16
-    visible: flase
+    visible: false
     minZoom: 9
     #group: base-layers
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
@@ -616,7 +616,7 @@ layers:
       class: h2
       label: KL
     label: KMS_lands
-    visible: flase
+    visible: false
     minZoom: 9
     gutter: 2
     transition: 0

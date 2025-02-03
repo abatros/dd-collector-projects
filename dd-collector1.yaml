@@ -108,11 +108,11 @@ layers:
 #      LAYERS: thgeom:amphoe
 #      exceptions: application/vnd.ogc.se_inimage
       
-  - uid: flood-2019
+  - uid: flood-2011
     button:
       class: h2
       label: Fd
-    label: flood-2019    #console.log('>>>>>>>>>>>>>>>>>> after-loading YAML permissions:', project.permissions)
+    label: flood-2011    #console.log('>>>>>>>>>>>>>>>>>> after-loading YAML permissions:', project.permissions)
 
     visible: false
     minZoom: 5
@@ -121,7 +121,8 @@ layers:
     #extent: 100.488739, 13.670610, 100.685554, 13.894135
     #extent: 100.48873901367188, 13.670610427856445, 100.68555450439453, 13.894135475158691
     #url: https://brainstem.abatros.com/gwc/service/wmts
-    url: https://brainstem.abatros.com/lekky/wms
+    url: https://gisagro40.gistda.or.th/rest/gis/wms
+    #url: https://brainstem.abatros.com/lekky/wms
     source: TileWMS
     #source: WMTS
     params:
@@ -138,7 +139,7 @@ layers:
       STYLES: ''
       WIDTH: 128
       HEIGHT: 128
-      LAYERS: lekky:2019-flood-utf
+      LAYERS: gisagro:flood_area_2011
       exceptions: application/vnd.ogc.se_inimage
      
 #  - uid: buildings

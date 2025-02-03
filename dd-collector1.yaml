@@ -93,7 +93,7 @@ layers:
     visible: true
     minZoom: 10
     #group: base-layers
-    url: https://inhelium.com/geoserver/gwc/service/tms/1.0.0/thgeom%3Apv-ap-tb@EPSG%3A900913@png/{z}/{x}/{-y}.png
+    url: https://inhelium.com/geoserver/gwc/service/tms/1.0.0/tbs%3Apv-ap-tb@EPSG%3A900913@png/{z}/{x}/{-y}.png
     source: XYZ
     gutter: 2
     attributions: 'Thailand Districts'

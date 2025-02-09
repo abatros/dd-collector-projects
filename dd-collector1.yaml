@@ -639,6 +639,6 @@ layers:
       STYLES: ''
       WIDTH: 128
       HEIGHT: 128
-      LAYERS: tbs:bkk_lp_ext
+      LAYERS: tbs:kpp_lp_ext
       #LAYERS: 0
       exceptions: application/vnd.ogc.se_inimage

@@ -580,7 +580,6 @@ layers:
     #group: base-layers
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     url: https://gisagro40.gistda.or.th/rest/gis/wms
-    serverType: 'geoserver'
     source: TileWMS
     params:
       format: image/png
@@ -592,6 +591,7 @@ layers:
       #LAYERS: GisDrawing:doh_hierarchy_link1,Ebook:river,Ebook:railway,Ebook:road_expressway,Ebook:road_motorway,Ebook:road_ah,Ebook:road_ah_label,Ebook:road_doh,Ebook:road_doh_label,Ebook:road_drr_2020,Ebook:road_drr_2020_label,Ebook:road_other,ProtoPj:mp,Bh:view_mat,Drawing:gis_mat_pte_1537,Ebook:point_village,Ebook:poi,Ebook:travel_point,Drawing:gis_river
       LAYERS: ecoplant:rice_16
       exceptions: application/vnd.ogc.se_inimage
+      serverType: geoserver
   
   - uid: GISTDA_Sugarcane
     label: GISTDA_Sugarcane

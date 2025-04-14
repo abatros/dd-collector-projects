@@ -580,11 +580,12 @@ layers:
     #group: base-layers
     #url: https://geoserver.thgeom-academy.com/geoserver/thgeom/ows
     url: https://gisagro40.gistda.or.th/rest/gis/wms
+    serverType: 'geoserver'
     source: TileWMS
     params:
       format: image/png
       VERSION: 1.1.1
-      #tiled: true
+      tiled: true
       #request: GetFeature
       #srsname: EPSG:24047
       STYLES: ''

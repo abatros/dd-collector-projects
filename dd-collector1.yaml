@@ -562,7 +562,7 @@ layers:
     params:
       format: image/png
       VERSION: 1.1.1
-      tiled: true
+      #tiled: true
       #request: GetFeature
       #srsname: EPSG:24047
       STYLES: ''
@@ -608,7 +608,7 @@ layers:
     params:
       format: image/png
       VERSION: 1.1.1
-      tiled: true
+      #tiled: true
       #request: GetFeature
       #srsname: EPSG:24047
       STYLES: ''

@@ -277,7 +277,7 @@ layers:
       label: R4
     visible: false
     minZoom: 10
-#    extent: 100.95, 13.05, 101.15, 13.25
+    extent: 98.97, 16.14, 100.15, 16.86
     source: GeoJSON
     url: https://inhelium.com/geoserver/ows
     params:
@@ -288,7 +288,7 @@ layers:
       outputFormat: application/json
       format_options: callback:loadFeatures
 #      srsname: EPSG:32647
-#      bbox: extent
+      bbox: extent
       exceptions: application/json
     style:
       stroke:

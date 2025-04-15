@@ -277,14 +277,14 @@ layers:
       label: R4
     visible: false
     minZoom: 10
-    extent: 98.97, 16.14, 100.15, 16.86
+    extent: 98.95, 16.10, 100.15, 16.90
     source: GeoJSON
     url: https://inhelium.com/geoserver/ows
     params:
       service: WFS
       version: 2.0.0
       request: GetFeature
-      typename: Albatross:mst_boundaries_rid_four
+      typename: Albatross:mst_boundaries_rid_four_multipart_to_singleparts
       outputFormat: application/json
       format_options: callback:loadFeatures
 #      srsname: EPSG:32647
@@ -295,7 +295,7 @@ layers:
         color: rgba(128, 64, 0, 1.0)
         width: 0.85
       fill:
-        color: rgba(200, 255, 200, 0.15)
+        color: rgba(200, 255, 200, 0.35)
       circle:
         radius: 7
         fill:

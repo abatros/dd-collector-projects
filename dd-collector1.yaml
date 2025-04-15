@@ -270,8 +270,8 @@ layers:
  #     #LAYERS: 0
  #     exceptions: application/vnd.ogc.se_inimage
 
-  - uid: rid-lands
-    label: Lands
+  - uid: rid4-bounds
+    label: rid4-bounds
     button:
       class: h2b
       label: R4
@@ -284,7 +284,7 @@ layers:
       service: WFS
       version: 2.0.0
       request: GetFeature
-      typename: lbatross:mst_boundaries_rid_four
+      typename: Albatross:mst_boundaries_rid_four
       outputFormat: application/json
       format_options: callback:loadFeatures
 #      srsname: EPSG:32647

@@ -273,7 +273,7 @@ layers:
   - uid: rid4-bounds
     label: rid4-bounds
     button:
-      class: h2b
+      class: h2
       label: R4
     visible: false
     minZoom: 10

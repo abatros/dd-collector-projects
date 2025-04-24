@@ -280,7 +280,7 @@ layers:
 #    extent: 98.95, 16.10, 100.15, 16.90
     source: GeoJSON
 #    url: https://inhelium.com/geoserver/ows
-    url: https://gis.rid.go.th/geoserver/ridbook/ows
+    url: https://gis.rid.go.th/geoserver/ows
     params:
       service: WFS
       version: 2.0.0

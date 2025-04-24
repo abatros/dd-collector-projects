@@ -279,12 +279,14 @@ layers:
     minZoom: 10
 #    extent: 98.95, 16.10, 100.15, 16.90
     source: GeoJSON
-    url: https://inhelium.com/geoserver/ows
+#    url: https://inhelium.com/geoserver/ows
+    url: https://gis.rid.go.th/geoserver/ridbook/ows
     params:
       service: WFS
       version: 2.0.0
       request: GetFeature
-      typename: Albatross:mst_boundaries_rid_four_multipart_to_singleparts
+#      typename: Albatross:mst_boundaries_rid_four_multipart_to_singleparts
+      typename: ridbook:basin22
       outputFormat: application/json
       format_options: callback:loadFeatures
 #      srsname: EPSG:32647

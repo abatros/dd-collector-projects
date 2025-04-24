@@ -277,7 +277,7 @@ layers:
       label: R4
     visible: false
     minZoom: 7
-#    extent: 98.95, 16.10, 100.15, 16.90
+    extent: 95.95, 10.10, 105.15, 20.90
     source: GeoJSON
 #    url: https://inhelium.com/geoserver/ows
     url: https://gis.rid.go.th/geoserver/ows
@@ -290,7 +290,7 @@ layers:
       outputFormat: application/json
       format_options: callback:loadFeatures
 #      srsname: EPSG:32647
-#      bbox: extent
+      bbox: extent
       exceptions: application/json
     style:
       stroke:

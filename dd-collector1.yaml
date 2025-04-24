@@ -276,7 +276,7 @@ layers:
       class: h2
       label: R4
     visible: false
-    minZoom: 10
+    minZoom: 7
 #    extent: 98.95, 16.10, 100.15, 16.90
     source: GeoJSON
 #    url: https://inhelium.com/geoserver/ows

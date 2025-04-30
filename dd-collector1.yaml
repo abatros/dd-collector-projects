@@ -467,51 +467,51 @@ layers:
       LAYERS: thgeom:oacs-geo-view-LNC
       exceptions: application/vnd.ogc.se_inimage
 
-  - uid: rice_for_testing-tms
-    label: rice_for_testing-tms
+#  - uid: rice_for_testing-tms
+#    label: rice_for_testing-tms
+#    button:
+#      class: h3b
+#      label: RT
+#    visible: false
+#    minZoom: 12
+#    #group: base-layers
+#    #url: https://landsmaps.dol.go.th/geoserver/gwc/service/tms/1.0.0/LANDSMAPS_EXC_MEA%3AV_EXC_PARCEL47_MEA@EPSG%3A900913@png/{z}/{x}/{-y}.png
+#    url: https://inhelium.com/geoserver/gwc/service/tms/1.0.0/tbs%3Arice_for_testing@EPSG%3A900913@png/{z}/{x}/{-y}.png
+#    source: XYZ
+#    gutter: 2
+
+  - uid: lp-wfs
+    label: lp-wfs
     button:
       class: h3b
-      label: RT
+      label: vLP
     visible: false
-    minZoom: 12
-    #group: base-layers
-    #url: https://landsmaps.dol.go.th/geoserver/gwc/service/tms/1.0.0/LANDSMAPS_EXC_MEA%3AV_EXC_PARCEL47_MEA@EPSG%3A900913@png/{z}/{x}/{-y}.png
-    url: https://inhelium.com/geoserver/gwc/service/tms/1.0.0/tbs%3Arice_for_testing@EPSG%3A900913@png/{z}/{x}/{-y}.png
-    source: XYZ
-    gutter: 2
-
- # - uid: lp-wfs
- #   label: lp-wfs
- #   button:
- #     class: h3b
- #     label: vLP
- #   visible: false
- #   minZoom: 14
- #   #extent: 100.5, 13.5, 101.1, 13.8
- #   source: GeoJSON
- #   wrapX: false
+    minZoom: 14
+    extent: 100.5, 13.5, 101.1, 13.8
+    source: GeoJSON
+    wrapX: false
  #   #url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS_EXC_MEA/ows
- #   url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows
- #   params:
- #     service: WFS
- #     version: 2.0.0
- #     request: GetFeature
- #     viewparams: utmmap:51363,utmmap:51364,utmmap:50362,utmmap:50361,utmmap:51341,utmmap:52344,utmmap:50484,utmmap:50493,utmmap:46241,utmmap:46252,utmmap:59391,utmmap:59392
+    url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows
+    params:
+      service: WFS
+      version: 2.0.0
+      request: GetFeature
+      viewparams: utmmap:51363,utmmap:51364,utmmap:50362,utmmap:50361,utmmap:51341,utmmap:52344,utmmap:50484,utmmap:50493,utmmap:46241,utmmap:46252,utmmap:59391,utmmap:59392
  #     #typename: LANDSMAPS:V_PARCEL47
  #     #typename: LANDSMAPS_EXC_MEA:V_EXC_PARCEL47_MEA
- #     typename: V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO
+      typename: V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL47_LANDNO,V_PARCEL48_LANDNO,V_PARCEL48_LANDNO
  #     #Bangkok, Pattaya, Chiangrai[Chiangrung], Phuket, Ubonratchathani
- #     outputFormat: application/json
- #     format_options: callback:loadFeatures
- #     srsname: EPSG:4326
- #     bbox: extent
- #     exceptions: application/json
- #   style:
- #     stroke:
- #       color: rgba(80, 190, 100, 1.0)
- #       width: 0.5
- #     fill:
- #       color: rgba(105, 125, 100, 0.1)
+      outputFormat: application/json
+      format_options: callback:loadFeatures
+      srsname: EPSG:4326
+      bbox: extent
+      exceptions: application/json
+    style:
+      stroke:
+        color: rgba(80, 190, 100, 1.0)
+        width: 0.5
+      fill:
+        color: rgba(105, 125, 100, 0.1)
 
  #  - uid: PTE-data
  #    label: PTE-data

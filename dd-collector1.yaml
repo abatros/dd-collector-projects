@@ -511,9 +511,9 @@ layers:
     style:
       stroke:
         color: rgba(80, 190, 100, 1.0)
-        width: 0.5
+        width: 0.85
       fill:
-        color: rgba(105, 125, 100, 0.1)
+        color: rgba(105, 125, 100, 0.4)
 
  #  - uid: PTE-data
  #    label: PTE-data

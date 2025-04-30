@@ -491,7 +491,7 @@ layers:
     source: GeoJSON
  #   wrapX: false
  #   #url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS_EXC_MEA/ows
-    url: https://landsmaps.dol.go.th/geoserver/LANDSMAPS/ows
+    url: https://landsmaps.dol.go.th/geoserver/ows
     params:
       service: WFS
       version: 2.0.0

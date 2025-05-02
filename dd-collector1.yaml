@@ -542,7 +542,7 @@ layers:
       label: LC
       class: h3
     #olayer_: ldd_tiled
-    visible: true
+    visible: false
     #group: base-layers
     #source: VectorTile
     source: XYZ
